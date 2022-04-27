@@ -1,0 +1,2314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;143;200;300;400;600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: #3c3c3b;
+  
+}
+img{
+    width: 100%;
+}
+
+
+
+/*26-04-22*/
+
+.new-event-detail .service-banner-title{
+    font-size: 55px;
+}
+.link-text{
+    color: #00A7DE;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+/*other css*/
+.navbar-toggler {
+    background: #1376bd;
+    width: 38px;
+    height: 38px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.navbar-toggler span {
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 2px 0px !important;
+    border-radius: 50px;
+    margin: auto;
+}
+:focus,
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+::-webkit-input-placeholder {
+     font-size: 14px;
+    color: #3C3C3B;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+    color: #3C3C3B;
+}
+
+::placeholder {
+  font-size: 14px;
+    color: #3C3C3B;
+}
+
+.main-title{
+    font-size: 36px;
+    color:#3B6FB2;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 200;
+}
+
+section{
+    padding: 60px 0px;
+}
+
+.theambtn {
+    color: #3C3C3B;
+    font-size: 18px;
+    background-color: #EABC00;
+    border-radius: 30px;
+    padding: 12px 30px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 30px;
+    transition: all 0.8s;
+    border: solid 1px #EABC00;
+}
+.theambtn:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #EABC00;
+     border: solid 1px #EABC00;
+}
+.pagination a:hover {
+    background: #3b6fb2;
+    color: white;
+    transition: all 0.8s;
+}
+.icon-btn:hover{
+    background-color: #ffffff;
+    transition: all 0.8s;
+}
+.icon-btn:hover i{
+    color: #3B6FB2;
+    transition: all 0.8s;
+}
+.linktext {
+    color: #1D70B7;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+.white-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 33px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    color: #3C3C3B;
+    font-weight: 600;
+    box-shadow: 0px 5px 8px #00000029;
+    transition: all 0.8s;
+}
+.white-btn:hover{
+    text-decoration: none;
+    background-color: #EABC00;
+    color: #3C3C3B;
+}
+
+
+/*other css*/
+
+.searchinput input[type="text"] {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    background: url(../images/search.png) no-repeat;;
+    background-size: 13px;
+    background-position: right 11px center;
+}
+
+.topheaderlink ul li a,
+.searchinput input{
+    font-size: 16px;
+    color: #3C3C3B;
+    line-height: 30px;
+    font-weight: 400;
+}
+::-webkit-input-placeholder { 
+    font-size: 16px;
+  }
+  
+  :-ms-input-placeholder { 
+    font-size: 16px;
+  }
+  
+  ::placeholder {
+    font-size: 16px;
+  }
+.topheaderlink {
+    padding: 15px 0px;
+}
+.navbar-brand{
+    max-width: 200px;
+}
+
+.nav-link{
+    font-size: 22px;
+    line-height: 30px;
+    color:#3B6FB2 !important;
+    position: relative;
+    padding: 20px;
+    font-weight: 400;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-left: 80px;
+}
+.nav-item.active .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #4FA5D9;
+    bottom: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.navbar{
+    padding: 10px 0px;
+}
+.nav-item.active .nav-link{
+    position: relative;
+    color: #00A7DE !important;
+}
+
+.bannersection {
+    background: url(../images/main-banner.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-content h1{
+    font-size: 65px;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.banner-content p{
+    font-size: 22px;
+    color: #FFFFFF;
+    max-width: 500px;
+    font-weight: 300;
+    padding: 15px 0px;
+}
+
+
+/*========banner section==========*/
+
+
+
+/*============Micas help you?======*/
+
+.micas-help-sec{
+    background-color: #3B6FB2;
+}
+
+.micas-icon {
+    max-width: 62px;
+    margin: auto;
+    height: 60px;
+}
+.micas-icon{
+    width: 50px;
+}
+.micas-content h3{
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+.micas-content p{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    max-width: 310px;
+    margin: auto;
+}
+
+.researchtextcover{
+    padding: 27px 0px;
+}
+.newsevents{
+    background-color: #FFFFFF;
+    padding: 65px 0px;
+}
+.theamheading{
+    font-size: 36px;
+    font-weight: 200;
+    color: #3B6FB2;
+    text-align: center;
+}
+
+
+/*new*/
+.new_image {
+    height: 204px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 16px;
+}
+.new-content h3 {
+    font-size: 18px;
+    min-height: 64px;
+    color: #3B6FB2;
+    font-weight: 600;
+    line-height: 24px;
+}
+.new-content p {
+    font-size: 16px;
+    min-height: 92px;
+    color: #3C3C3B;
+    line-height: 24px;
+}
+.new-content a {
+    color: #3B6FB2;
+    font-size: 16px;
+    text-decoration: underline !important;
+}
+.blanksec{
+    min-height: 300px;
+    background: #f8f8f8;
+}
+
+footer {
+    background: radial-gradient( circle 527px ,#009fe3, #009fe3, #1d71b8);
+    padding-top: 12%;
+    padding-bottom: 49px;
+}
+.footer-meida ul li a {
+    max-width: 30px;
+    margin-right: 15px;
+    transition: all 0.6s;
+}
+.footer-meida ul li a:hover{
+    transform: scale(1.1);
+} 
+.footer-meida h6 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.footer-right p {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: underline;
+}
+.copyright {
+    padding: 17px 0px;
+    border-top: solid 1px #FFFFFF;
+    margin-top: 4%;
+}
+.copyright ul li {
+    margin-right: 14px;
+    position: relative;
+    padding-right: 14px;
+}
+.copyright ul li a,
+.copyright p{
+    color: #fff;
+    font-size: 12px;
+}
+.copyright ul li:after {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 1px;
+    height: 12px;
+    right: 0;
+    top: 8px;
+}
+.copyright ul li:last-child:after{
+    display: none;
+}
+
+
+
+
+/*research-domains-page*/
+
+.research-domains{
+    background: url(../images/research-domains-bg.svg);
+    /* min-height: 600px; */
+    background-size: cover;
+}
+.research-service {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 13px;
+    border-radius: 30px;
+    justify-content: space-around;
+    transition: all 0.8s;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px #00000029;
+    position: relative;
+    overflow: hidden;
+}
+.research-service:hover{
+    background: #E2BD3F;
+
+}
+.research-icon {
+    width: 24%;
+}
+.research-ser-content {
+    width: 62%;
+}
+.research-ser-content h6 {
+    color: #3C3C3B;
+    font-size: 18px;
+    font-weight: 600;
+}
+.service-banner-title img {
+    width: 50px;
+    margin-right: 19px;
+}
+.service-banner-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3B6FB2;
+    margin-bottom: 31px;
+    font-weight: 200;
+    font-size: 65px;
+    line-height: 75px;
+}
+.service-title-block{
+    max-width: 737px;
+    margin: auto;
+}
+.academic-staff .main-title {
+    font-size: 26px;
+}
+.academic-profile {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: solid 4px #3B6FB2;
+}
+.academic-inner p {
+    font-size: 18px;
+    color: #3C3C3B;
+}
+.academic-profile img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.unique-infrastructure{
+    background-color: #3B6FB2;
+    height: 500px;
+}
+
+
+
+
+
+/* detailpagina page */
+
+.bottom-design {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    width: 100%;
+    overflow: hidden;
+    padding: 8px;
+   
+    background-color: #00A7DE;
+    border-radius: 0px 0px 129px 116px;
+}
+.analog-circuits .service-title-block {
+    max-width: 790px;
+}
+.analog-circuits .service-banner-title img {
+    width: 118px;
+
+}
+
+.analog-circuits-btn {
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 1px solid #3B6FB2;
+    box-shadow: 0px 5px 8px #00000029;
+    cursor: pointer;
+}
+.analog-circuits-btn:hover{
+    background-color: #3B6FB2;
+    transition: all 0.8s;
+   
+}
+.analog-circuits-btn:hover p{
+    color: #FFFFFF;
+    transition: all 0.8s;
+  
+}
+.analog-circuits-btn a{
+    text-decoration: none;
+}
+
+.publications-btn:hover{
+    color: #FFFFFF;
+    background-color: #3B6FB2;
+    transition: all 0.8s;
+    text-decoration: none;
+}
+.analog-circuits-btn p{
+    color: #3B6FB2;
+    font-weight: 600;
+}
+
+
+
+.sub-title{
+    font-size: 26px;
+    color: #3B6FB2;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.research-challenges-subtitle-img img{
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.discover-our-research .research-challenges-subtitle-img img{
+    box-shadow: none;
+}
+.research-challenges-subtitle-text {
+    padding: 40px 20px 40px 0px;
+}
+.research-challenges-subtitle-innertext{
+    max-width: 840px;
+}
+
+.research-topics-list ul li p{
+    position: relative;
+    padding: 0px 0px 0px 20px;
+}
+.research-topics-list ul li{
+margin-bottom: 10px;
+}
+.research-topics-list ul li:last-child{
+    margin-bottom: 0px;
+}
+.research-topics-list ul li p::after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    left: 0px;
+    top: 25%;
+    transform: translateY(-50%);
+}
+.white-text-light{
+font-weight: 100;
+color: #FFFFFF;    
+}
+
+.chip-gallery-heading{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+.chip-gallery-text ul li h3 {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+.chip-gallery-text ul li span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.chip-cover{
+    width: 100%;
+    display: flex;
+}
+.chip-gallery-cover{
+    width: 100%;
+    display: flex;
+}
+.chip-gallery-inner{
+    width: 50%;
+}
+.chip-inner{
+    width: 50%;
+}
+
+.top-publications .research-topics-list ul li p::after{
+top: 13px;
+
+}
+.publications-btn{
+    font-size: 18px;
+    color: #3B6FB2;
+    font-weight: 600;
+    padding: 12px 35px;
+    border: 1px solid #3B6FB2;
+    border-radius: 30px;
+    line-height: 30px;
+    box-shadow: 0px 5px 8px #00000029;
+}
+
+.discover-our-research{
+    padding: 40px 23px 40px 27px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+.research-challenges .service-sub-title img{
+    width: 50px;
+}
+.discover-research-domainspara{
+font-size: 22px;
+line-height: 26px;
+max-width: 700px;
+    margin: auto;
+}
+.discover-our-research .research-challenges-subtitle-img img {
+    border-radius: 15px 15px 0px 0px;
+  
+}
+.chip-inner a{
+    text-decoration: underline!important;
+    color: #3B6FB2;
+    font-size: 18px;
+    line-height: 24px;
+}
+.chip-gallery-text {
+    padding: 0px 13px 0px 18px;
+}
+ 
+
+.service-sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3B6FB2;
+    margin-bottom: 31px;
+    font-weight: 200;
+    font-size: 36px;
+}
+.service-sub-title img{
+   
+    margin-right: 10px;
+}
+
+
+
+
+
+/* 
+detail-research-topic */
+.research-topic .service-banner-title{
+    font-size: 55px;
+    line-height: 65px;
+}
+.monothlic-img .new_image {
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.slideup {
+    height: 57px;
+    padding: 10px;
+    width: 57px;
+    display: flex;
+    position: absolute;
+    background: #3C3C3B;
+    border-radius: 50%;
+    top: -25px;
+    right: 5%;
+    border: 1px solid #3C3C3B;
+}
+.slideup:hover{
+    background-color: #EABC00;
+    border: 1px solid #EABC00;
+    transition: all 0.8s;
+}
+footer{
+    position: relative;
+}
+.video-cover video{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.wrapper{
+    max-width: 750px;
+    position:relative;
+  
+}
+.playpause {
+    background-image: url(../images/videoplaybutton.svg);
+    background-repeat: no-repeat;
+    width: 86px;
+    height: 86px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    cursor: pointer;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* staff */
+
+.staff{
+    background-image: url(../images/staff-bg.png);
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+.searchstaff{
+    width: 535px;
+}
+.searchstaff .searchinput {
+    display: inline-block;
+    background: white;
+    padding: 0px 22px 0px 22px;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+}
+.searchstaff .searchinput input {
+    width: 100%;
+    font-size: 18px!important;
+    height: 37px;
+}
+
+
+.searchstaff .searchinput input[type="text"] {
+   
+    background: url(../images/search.png) no-repeat;
+    background-size: 22px;
+    background-position: right 9px top 0px;
+}
+
+.searchinnertext{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3C3C3B;
+   
+    line-height: 24px;
+}
+.staff-banner-section h1{
+margin-bottom: 45px;
+}
+
+.academic-staff-cover{
+    padding: 26px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    background-color: #ffffff;
+   
+}
+.icon-btn{
+    width: 41px;
+    height: 41px;
+    border: 1px solid #3B6FB2;
+    background-color: #3B6FB2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.icon-btn i{
+font-size: 22px;
+color: white;
+}
+
+.academic-text h3{
+font-size: 22px;
+color: #3B6FB2;
+font-weight: 300;
+line-height: 26px;
+margin-bottom: 8px;
+}
+.academic-text h4{
+    font-size: 18px;
+    color: #3C3C3B;
+    line-height: 24px;
+    font-weight: 300;
+}
+.telcolor a{
+    color: #3C3C3B;
+    margin-top: 30px;
+
+}
+
+.contact-michiel{
+    color: #3B6FB2;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline!important;
+    font-weight: 300;
+}
+.academic-staff-img-cover{
+    margin-top: 20px;
+}
+.academic-staff-text-cover{
+    margin-left: 35px;
+}
+
+.pagination-cover{
+    padding-bottom: 65px;
+}
+.pagination {
+    display: flex;
+  }
+  
+  .pagination a{
+      width: 42px;
+      height: 42px;
+      border: 1px solid #707070;
+      border-radius: 8px;
+      color: #3C3C3B;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-right: 10px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+      
+  }
+  .pagination a:hover,
+  .icon-btn:hover{
+    text-decoration: none;
+  }
+ 
+  
+  .pagination a.active {
+    background-color: #3B6FB2;
+    border: 1px solid #3B6FB2 ;
+    color: white;
+ 
+  }
+.searching-radio-btn label{
+font-size: 18px;
+color: #3C3C3B;
+font-weight: 300;
+line-height: 24px;
+margin-bottom: 10px;
+}
+.searching-radio-btn{
+    display: flex;
+    align-items: center;
+}
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label
+  {
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+    
+      display: inline-block;
+      
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      border: 1px solid #707070;
+      border-radius: 100%;
+      background: #fff;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+      content: '';
+      width: 14px;
+      height: 14px;
+      background: #3B6FB2;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+     
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  
+  .searching-modes-cover{
+    padding-top: 65px;
+}
+.searching-modes{
+    display: flex;
+}
+.searchinner-text-cover{
+    width: 25%;
+}
+.searching-category-cover{
+    width: 75%;
+}
+.telcolor a:hover{
+text-decoration: none;
+}
+
+
+
+/* 
+details-team-member */
+
+.details-team-member{
+    background-image: url(../images/team-member-bg.png);
+    background-position: bottom;
+    width: 100%;
+    background-size: cover;
+}
+.details-team-member .service-banner-title{
+justify-content: start;
+}
+.Interests-expertise{
+    max-width: 768px;
+}
+
+.Interests-expertise .research-topics-list ul li{
+    margin-bottom: 20px;
+}
+
+.Interests-expertise .research-topics-list ul li p::after,
+.details-team-member-left .research-topics-list ul li p::after {
+    top: 50%;
+}
+.details-team-member-left h6{
+    margin-bottom: 15px!important;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3C3C3B;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+/* search */
+
+.Searchhead{
+    background-image: url(../images/search-bg.png);
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center -28px;
+
+}
+.searchpageinput{
+    position: relative;
+    max-width: 1125px;
+    margin-bottom: 30px;
+}
+.searchpageinput input{
+    height: 69px;
+    border: 1px solid #3C3C3B;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px 25px;
+    font-size: 18px;
+    color: #3C3C3B;
+   
+}
+
+.searchpageinput a
+{
+    position: absolute;
+    top: 58%;
+    right: 25px;
+    width: 27px;
+    transform: translateY(-50%);
+}
+.searchfor{
+    margin-bottom: 40px;
+}
+
+.searchforbtn
+
+{
+    width: 171px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3C3C3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+    margin-right: 15px;
+    background-color: #fff;
+    transition: all 0.8s;
+    border: none;
+}
+.newestfirst select{
+    border: none;
+    width: 171px;
+    height: 50px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3C3C3B;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/downarrow.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: right 15px top 50%!important;
+    
+}
+.newestfirst select:focus{
+    outline: none;
+}
+.searchonlybtn{
+    padding: 12px 30px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3C3C3B;
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 0.8s;
+}
+.searchforbtn.active,
+.searchonlybtn.active,
+.newestfirst select.active
+{
+    background-color: #D6D6D6;
+    font-weight: 500;
+    color: #3C3C3B;
+    text-decoration: none;
+    
+ 
+   
+}
+.searchforbtn:hover,
+.searchonlybtn:hover,
+.newestfirst select:hover{
+    text-decoration: none;
+    color: #3C3C3B;
+    background-color:#D6D6D6;
+}
+
+.Verwijder:hover,
+.reloadimg:hover{
+    color: #3C3C3B;
+    text-decoration: none;
+}
+.total-result{
+    margin-bottom: 40px;
+}
+.Createdmb{
+    margin-bottom: 30px!important;
+}
+.custumarginbottom{
+    margin-bottom: 60px;
+}
+.academic-text a{
+color: #D800AE;
+text-decoration: none;
+}
+.resultsnews{
+padding-left: 25px;
+max-width: 788px;
+}
+.resultsnews span{
+    font-size: 15px;
+    font-weight: 200;
+    color: #3C3C3B;
+    line-height: 24px;
+}
+.Verwijder{
+color: #A2A2A2;
+font-weight:200;
+line-height: 24px;
+font-size: 18px;
+margin-left: 25px;
+}
+.toonmeer{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B6FB2;
+    text-decoration: underline 2px;
+   
+}
+.total-result span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B6FB2;
+
+}
+
+
+.newestfirst{
+    position: relative;
+    border: none;
+}
+.newestfirst i {
+    position: absolute;
+    font-size: 33px;
+    right: 12px;
+    top: 46%;
+    display: flex;
+    transform: translateY(-50%);
+}
+
+
+
+/* chip-gallery */
+
+.chip-gallery{
+    background-image: url('../images/chipgallery-bg.png');
+    background-position: unset;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.chipheadpara p{
+    max-width: 785px;
+margin: auto;
+font-size: 22px;
+color: #3C3C3B;
+line-height: 26px;
+font-weight: 300;
+
+}
+.filteronresearchdomains{
+    max-width: 620px;
+    margin: auto;
+}
+
+.FilteronResearchdomainsdropdown .dropdown button{
+    width: 402px;
+    height: 69px;
+    border: 1px solid #3B6FB2;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3B6FB2;
+    padding: 0px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FilteronResearchdomainsdropdown .dropdown-toggle::after{
+    display: none;
+}
+span.dropdownicon {
+    position: relative;
+    right: -37px;
+    font-size: 30px;
+    color: #3B6FB2;
+}
+.filtersearch{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: #E2BD3F;
+    padding: 23px 42px;
+    transition: all 0.8s;
+}
+.filteronresearchdomains select#Newestfirst {
+    padding: 10px;
+}
+.SchottkyPhotodiodes{
+    min-height: 95px;
+}
+
+.SchottkyPhotodiodestext{
+font-size: 22px;
+line-height: 26px;
+color: #3B6FB2;
+font-weight: 300;
+margin-top: 9px;
+}
+.SchottkyPhotodiodes img{
+    width: 43px;
+    height: 43px;
+}
+.analogpower-circuit-text{
+    font-size: 15px;
+    color: #3B6FB2;
+    line-height: 26px;
+    font-weight: 300;
+    padding-left: 55px;
+}
+.analogpower-managmentcover .chip-gallery-text ul li h3,
+.analogpower-managmentcover .chip-gallery-text ul li span{
+color: #3C3C3B;
+}
+.analogpower-managmentcover .chip-gallery-text ul li span{
+    font-weight: 300;
+}
+.analogpower-managmentcover .chip-gallery-text ul li{
+    margin-bottom: 30px;
+}
+.analogpower-managmentcover .chip-gallery-text {
+    padding: 0px 0px 0px 19px;
+}
+.read-the-paper{
+    color: #3B6FB2;
+    font-size: 16px!important;
+    line-height: 26px;
+    font-weight: 300;
+    padding: 9px 15px;
+    border: 1px solid #3B6FB2;
+    text-decoration-color: #fff!important;
+   transition: all 0.8s;
+   border-radius: 10px;
+
+}
+a.read-the-paper:hover,
+.filtersearch:hover{
+    background-color: #3B6FB2;
+    color: #fff;
+    text-decoration: none;
+    text-decoration-color: #3B6FB2!important;
+    transition: all 0.8s;
+    
+}
+.analogpower-managmentcover .research-challenges-subtitle-img img{
+    border-radius: 15px;
+}
+.analogpower-circuitcover {
+    padding: 33px 20px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+border-radius: 30px;
+margin-bottom: 30px;
+}
+
+.analogpower-managmentcover .chip-inner {
+    width: 47.5%;
+}
+/* .chip-gallery-text {
+    width: 52.5%;
+} */
+.alogpower-managmentcover .pagination-cover {
+    padding-bottom: 15px;
+}
+
+.reloadimg{
+    width: 42px;
+    height: 34px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #000;
+    transition: all 0.8s;
+
+}
+.dropdown-menu.show {
+    display: block;
+    width: 402px;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 15%);
+    border: none;
+}
+button.btn.dropdown-toggle:focus{
+    box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 15%);
+}
+.reloadimg:hover,
+.dropdown-item:active,
+.dropdown-item:hover{
+    background-color: #3B6FB2;
+    color: #fff;
+    transition: all 0.8s;
+}
+.dropdown-item:active p,
+.dropdown-item:hover p{
+    color: #fff;
+    transition: all 0.8s;
+}
+
+
+/* Educating for excellence */
+
+.educating-for-excellence{
+    background-image: url(../images/education-excellence-bg.png);
+    min-height: 669px;
+    background-position: top -33px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.educating-for-excellence-inspire{
+    min-height: 600px;
+}
+
+.educating-for-excellence .service-banner-title {
+    display: block;
+    max-width: 687px;
+}
+.educating-excellence-img img,
+.spinoffs-company-logo-inner,
+.making-society-aware-img{
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+
+.educationquoteshead{
+    font-size: 32px;
+color: #3B6FB2;
+font-weight: 200;
+line-height: 40px;
+margin-bottom: 50px;
+max-width: 780px;
+margin: auto;
+}
+
+
+
+.educating-for-excellence-cover .micas-inner .micas-icon {
+        width: 80px;
+    }
+.educating-for-excellence-cover .micas-inner .micas-icon {
+        max-width: 80px;
+        margin: auto;
+        height: 47px;
+    }
+
+    
+
+    /* inspire */
+
+
+
+
+.spinoffs{
+    max-width: 737px;
+    margin: auto;
+}
+
+.spinoffs-company-logo-inner{
+    width: 31%;
+    height: 201px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-bottom: 30px;
+}
+.mindcet img {
+    width: 162px;
+    height: 100%;
+    object-fit: contain;
+}
+.barcodesection{
+    max-width: 546px;
+    height: 186px;
+   border: 1px solid #707070;
+   background: white;
+}
+.barcodesection-text {
+    padding: 20px 45px 20px 25px;
+    position: relative;
+    width: 65%;
+}
+.barcodesection-img{
+    padding: 20px 20px 20px 45px;
+    width: 35%;
+}
+.barcodesection-text::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #707070;
+    top: 0px;
+    right: 0px;
+}
+.making-society-aware-img {
+    padding: 0px 70px;
+    min-height: 409px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mr-custom-bottom{
+    margin-bottom: 50px;
+}
+/*Responsive css*/
+
+@media(max-width: 1199px){
+
+    /* Educating for excellence */
+
+
+    .educating-for-excellence{
+        min-height: 0px;
+    }
+
+
+    /* Educating for excellence end */
+/* 
+inspire */
+
+    .spinoffs-company-logo-inner {
+        height: 155px;
+    }
+
+    .making-society-aware-text.text-left.pt-5 {
+        padding-top: 0px!important;
+    }
+
+/* 
+inspire end*/
+
+
+
+    .analogpower-managmentcover .chip-gallery-text {
+        padding: 15px 0px 0px 0px;
+    }
+    .SchottkyPhotodiodestext {
+        font-size: 21px;
+    }
+    .analogpower-circuitcover .chip-cover{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .analogpower-circuitcover .chip-inner.chip-inner-img,
+    .analogpower-circuitcover .chip-gallery-text {
+        width: 100%;
+    }
+    .searchonlybtn {
+        padding: 10px 23px;
+        margin-right: 8px;
+    }
+    .searchinnertext {
+        font-size: 17px;
+    }
+    .searching-radio-btn label {
+        font-size: 16px;
+    }
+    .research-ser-content h6 {
+       
+        font-size: 17px;
+    }
+    .chip-gallery-cover{
+        display: block;
+    }
+    .chip-gallery-inner {
+        width: 100%;
+    }
+    .chip-cover {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .chip-inner.chip-inner-text {
+        width: 75%;
+    }
+    .chip-inner.chip-inner-img {
+        width: 25%;
+    }
+    .banner-content h1{
+        font-size: 52px;
+    }
+    .banner-content p{
+         font-size: 19px;
+    }
+.theambtn,
+.publications-btn {
+    font-size: 15px;
+    padding: 9px 22px;
+}
+
+
+.new_image {
+    height: 177px;
+    margin-bottom: 16px;
+}
+.new-content h3 {
+    font-size: 18px;
+    min-height: 78px;
+}
+.academic-profile{
+    width: 110px;
+    height: 110px;
+    border: solid 3px #3B6FB2;
+}
+.analog-circuits-btn p{
+    font-size: 14px;
+}
+
+.analog-circuits-btn {
+ 
+    padding: 10px 30px;
+}
+
+}
+
+@media(max-width: 991px){
+
+    /* inspire */
+   
+    .making-society-aware-img {
+        padding: 20px 72px;
+        min-height: 310px;
+    }
+
+    .barcodesection-text {
+        padding: 0px 15px 0px 10px;
+        width: 81%;
+    }
+    .barcodesection{
+        height: auto;
+        margin: auto;
+    }
+    .barcodesection-img {
+        padding: 0px 0px 0px 0px;
+       width: 19%;
+    }
+
+    .discover-research-domainspara.mb-4 {
+        margin-bottom: 5px!important;
+    }
+
+    .mindcet img {
+        width: 100%;
+       
+    }
+    .making-society-aware-img{
+        margin-top: 30px;
+    }
+    .spinoffs-company-logo-inner{
+      
+        margin-bottom: 20px;
+    }
+    .making-society-aware-text.text-left.pt-5 {
+        margin-top: 15px;
+    }
+  
+/* inspire end */
+
+/* education */
+
+.mr-custom-bottom {
+    margin-bottom: 25px;
+}
+
+.educationquoteshead {
+    font-size: 28px;
+}
+/* education end */
+
+
+   
+    .FilteronResearchdomainsdropdown .dropdown button{
+        
+            width: 351px;
+        height: 43px;
+        font-size: 16px;
+    }
+    .dropdown-menu.show{
+        width: 351px;
+    }
+    .dropdown-menu.show p{
+       font-size: 15px;
+    }
+    .FilteronResearchdomainsdropdown .dropdown-item{
+padding: 2px 5px;
+    }
+    .SchottkyPhotodiodes {
+        margin-bottom: 15px;
+        min-height: 0px;
+    }
+    .read-the-paper {
+        font-size: 13px!important;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+    .analogpower-managmentcover .chip-gallery-text {
+        padding: 0px 0px 0px 20px;
+    }
+    .filtersearch {
+        font-size: 15px;
+        padding: 10px 25px;
+        
+    }
+    .analogpower-managmentcover .chip-gallery-text ul li {
+        margin-bottom: 5px;
+    }
+    .analogpower-circuitcover .chip-cover {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+    .Searchhead{
+        background-position: center!important;
+    }
+    .total-result {
+        margin-bottom: 20px;
+    }
+    .toonmeer {
+        font-size: 16px;
+    }
+    .searchonlybtn {
+        padding: 7px 13px;
+        margin-right: 7px;
+        font-size: 15px;
+    }
+    .searchforbtn,
+    .newestfirst select
+     {
+        width: 125px;
+        height: 40px;
+        font-size: 15px;
+    padding: 0px 0px 0px 10px;
+    background-position: right 8px top 50%;
+    background-size: 11px;
+    }
+
+
+    .Verwijder{
+        font-size: 15px;
+    }
+    .newestfirst i {   
+        font-size: 24px;
+        right: 6px
+    }
+    .searching-modes {
+        
+        margin-bottom: 20px;
+    }
+
+    .academic-staff-cover {
+        padding: 15px 15px;
+    }
+    .searchinner-text-cover {
+        width: 35%;
+    }
+    .searching-category-cover {
+        width: 65%;
+    }
+    .academic-text h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .icon-btn {
+        width: 35px;
+        height: 35px;
+    }
+    .icon-btn i {
+        font-size: 17px;
+    }
+    .academic-text h4 {
+        font-size: 15px;
+    }
+    .academic-staff-text-cover p {
+        font-size: 14px;
+    }
+    .contact-michiel {
+      
+        font-size: 14px;
+    }
+    .academic-staff-text-cover {
+        margin-left: 15px;
+    }
+    .analog-circuits-btn {
+        padding: 9px 9px;
+    }
+    .analog-circuits-btn p {
+        font-size: 12px;
+    }
+    .pad-top{
+        padding: 50px 0px;
+    }
+section {
+    padding: 40px 0px;
+}
+
+.analog-circuits-btn{
+    margin-bottom: 10px;
+}
+.research-challenges-subtitle-text {
+    padding: 0px 0px 0px 0px!important;
+}
+.sub-title {
+   
+    margin-bottom: 15px;
+}
+.main-title,
+.service-sub-title {
+    font-size: 30px;
+}
+p,
+.discover-research-domainspara,
+.total-result span,
+.resultshow .linktext{
+    font-size: 17px;
+}
+
+.micas-content h3 {
+    font-size: 18px;
+}
+.micas-content p {
+    font-size: 15px;
+}
+.white-btn {
+    font-size: 14px;
+    padding: 9px 26px;
+}
+.new_image{
+    height: 128px;
+    margin-bottom: 10px;
+}
+.new-content h3 {
+    font-size: 15px;
+    min-height: 69px;
+    line-height: 19px;
+}
+
+.new-content p {
+    font-size: 14px;
+    min-height: 98px;
+    line-height: 21px;
+}
+.academic-inner{
+    margin-bottom: 40px;
+}
+.service-banner-title,
+.research-topic .service-banner-title{
+    font-size: 40px;
+    line-height: 45px;
+}
+.research-challenges .service-sub-title img,
+.research-challenges .service-banner-title img{
+    width: 45px;
+}
+.nav-link {
+    font-size: 16px;
+    padding: 9px 38px;
+    margin-left: 0px;
+}
+.nav-item.active .nav-link::after{
+    height: 2px;
+}
+.navbar-nav{
+    margin-top: 15px;
+}
+.chip-gallery-text ul li span,
+.chip-gallery-text ul li h3 {
+  
+    font-size: 16px;
+}
+.chip-gallery-heading {
+    font-size: 19px;
+   
+    margin-bottom: 6px;
+    line-height: 20px;
+}
+}
+@media(max-width: 767px){
+
+    /* inspire */
+
+    .spinoffs-company-logo-inner{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+  
+
+
+/* education */
+
+    .educationquoteshead {
+        font-size: 25px;
+        line-height: 24px;
+    }
+
+
+    .educating-excellence-img{
+        margin-top: 30px;
+    }
+
+/* education end */
+
+   
+    
+    .staff-banner-section h1 {
+        margin-bottom: 25px;
+    }
+    .chipheadpara p {
+       
+        font-size: 18px;
+    }
+    .analogpower-managmentcover .chip-gallery-text{
+        padding: 10px 0px 0px 0px;
+    }
+    .analogpower-circuit-text {
+        padding-left: 0px;
+        margin-bottom: 8px;
+    }
+    a.reloadimg.ml-3 img {
+        width: 28px;
+    }
+    .analogpower-circuitcover .chip-cover{
+        flex-direction: column;
+    }
+    .toonmeer {
+        font-size: 15px;
+    }
+    .searchforbtn,
+    .searchonlybtn{
+      
+        margin-bottom: 10px;
+    }
+    .searchfor {
+        margin-bottom: 15px;
+    }
+    .searchpageinput input {
+        height: 45px;
+    }
+    .searchpageinput a {
+       
+        width: 20px;
+      
+    }
+    .Createdmb {
+        margin-bottom: 10px!important;
+    }
+    .custumarginbottom {
+        margin-bottom: 30px;
+    }
+    .searching-modes-cover {
+        padding-top: 45px;
+    }
+    .details-team-member-left {
+        margin-bottom: 20px;
+    }
+    .searching-modes {
+        margin-bottom: 10px;
+    }
+    .searching-category-cover,
+    .searchinner-text-cover{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .searching-modes{
+        flex-direction: column;
+    }
+    .pagination a {
+        width: 35px;
+        height: 35px;
+       
+        font-size: 13px;
+     
+        margin-right: 8px;
+     
+    }
+    .pagination-cover {
+        padding-bottom: 46px;
+    }
+    .academic-staff-cover {
+        margin-bottom: 20px!important;
+    }
+    .academic-staff-cover.mb-4 {
+        margin-bottom: 20px!important;
+    }
+    .research-ser-content h6 {
+      
+        font-size: 16px;
+        
+    }
+    .research-challenges .service-sub-title img,
+.research-challenges .service-banner-title img{
+    width: 40px;
+}
+    .main-title, .service-sub-title {
+        font-size: 28px;
+    }
+    p,
+    .discover-research-domainspara.academic-inner,
+    .total-result span,
+    .resultshow .linktext {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .monothlic-img .news-inner{
+        margin-bottom: 15px;
+    }
+    .pad-top{
+        padding: 0px 0px;
+    }
+.banner-content h1 {
+    font-size: 38px;
+}
+
+.analog-circuits .service-banner-title img {
+    width: 70px;
+}
+
+
+.pad-top{
+    padding-top: 20px;
+}
+.sub-title {
+    font-size: 20px;
+}
+.chip-inner.chip-inner-img {
+    width: 50%;
+}
+.chip-inner.chip-inner-text {
+    width: 50%;
+}
+.chip-gallery-heading {
+    font-size: 16px;
+}
+.chip-gallery-text ul li h3,
+.chip-gallery-text ul li span {
+    font-size: 14px; 
+    }
+.banner-content p{
+    font-size: 17px;
+}
+.bannersection{
+    min-height: 360px;
+}
+
+.new-content h3 {
+    font-size: 18px;
+    min-height: 55px;
+    line-height: 24px;
+}
+.new-content p {
+    font-size: 16px;
+    min-height: 62px;
+    line-height: 25px;
+}
+.new_image {
+    height: auto;
+}
+.news-inner,
+.micas-inner {
+    margin-bottom: 40px;
+}
+.blanksec {
+    min-height: 110px;
+}
+.research-service {
+    flex-direction: column;
+    min-height: 160px;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 23px;
+    
+}
+.research-ser-content{
+    width: 100%;
+    text-align: center;
+}
+.research-icon {
+    width: 46%;
+}
+.service-banner-title,
+.research-topic .service-banner-title {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.main-title {
+    
+    margin-bottom: 20px;
+    
+}
+.service-title-block.mb-5 {
+    margin-bottom: 20px!important;
+}
+.slideup {
+    height: 45px;
+    padding: 10px;
+    width: 45px;
+}
+}
+
+@media(max-width: 576px){
+
+/* inspire */
+
+    .making-society-aware-img {
+       
+        min-height: 0px;
+    }
+
+    /* inspire end*/
+
+
+
+    .filteronresearchdomains {
+       
+        flex-direction: column;
+    }
+    .filtersearchcover{
+        margin-top: 10px;
+    }
+    .FilteronResearchdomainsdropdown.mr-3 {
+      
+        margin-right: 0px!important;
+    }
+    .FilteronResearchdomainsdropdown .dropdown button {
+        width: 100%;
+        padding: 12px 24px;
+      
+    }
+    .dropdown-menu.show{
+        width: 100%;
+    }
+    .dropdown-menu.show p {
+        font-size: 14px;
+    }
+    span.dropdownicon {
+        
+        right: -11px;
+    }
+    
+    .chipheadpara p {
+        font-size: 16px;
+    }
+
+    .SchottkyPhotodiodestext.ml-2{
+        margin-left: 0px!important;
+        margin-top: 0px;
+        font-size: 18px;
+       
+    }
+    .analogpower-managmentcover .chip-gallery-text {
+        padding: 0px 0px 0px 0px;
+    }
+    .SchottkyPhotodiodesinner {
+        flex-direction: column;
+        align-items: center!important;
+    }
+    .analogpower-circuit{
+        text-align: center;
+    }
+   
+    .searchstaff .searchinput input::placeholder{
+font-size: 13px;
+    }
+    .searchstaff .searchinput {
+       
+    
+        height: 52px;
+        line-height: 35px;
+    }
+    .searching-radio-btn label {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before{
+        width: 20px;
+        height: 20px;
+    }
+    [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        transform: translate(0% ,-50%);
+        left: 4px;
+    }
+    .searchinner {
+        margin-bottom: 10px;
+    }
+    .searchtext {
+        flex-direction: column;
+        align-items: start!important;
+    }
+    .searchstaff {
+        width: 100%;
+    }
+    h2.searchinnertext.mr-5 {
+        margin-right: 11px!important;
+    }
+    
+    .searchstaff .searchinput {
+      
+        padding: 5px 10px 10px 10px;
+       
+    }
+    .searchstaff .searchinput i.fa.fa-search {
+        color: #3C3C3B;
+
+    }
+    .searchstaff .searchinput input[type="text"] {
+        padding: 5px;
+        border: solid 1px #ffffff;
+    border-bottom: 1px solid #7E7E7E;
+    margin-top: 0px;
+        
+    }
+    .main-title, .service-sub-title {
+        font-size: 25px;
+    }
+    .slideup {
+        height: 40px;
+        padding: 10px;
+        width: 40px;
+    }
+    .playpause{
+        width: 55px;
+        height: 55px;
+    }
+    .service-title-block.mb-5 {
+        margin-bottom: 20px!important;
+    }
+    a.theambtn.mt-5 {
+        margin-top: 15px!important;
+    }
+
+    .theambtn{
+        line-height: 20px;
+    }
+    .research-challenges-subtitle.mt-5 {
+        margin-top: 20px!important;
+    }
+    .sub-title {
+        margin-bottom: 10px;
+    }
+    .monothlic-img.mt-5.mb-5 {
+        margin-top: 20px!important;
+    }
+    .research-service {
+    flex-direction: row;
+    min-height: auto;
+    margin-bottom: 23px;
+}
+
+.analog-circuits-btn {
+    margin-bottom: 5px;
+    padding: 5px 0px;
+}
+.chip-inner.interested-img {
+    width: 60%;
+}
+.chip-inner.interested-text {
+    width: 100%;
+}
+
+.chip-cover {
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.chip-inner.chip-inner-text {
+    width: 100%;
+}
+.chip-gallery-text ul li {
+    line-height: 20px;
+}
+.chip-gallery-text {
+    padding: 0px 0px 0px 0px;
+}
+.analogpower-circuitcover .chip-gallery-text.text-left {
+    
+    margin: 10px 0px 0px;
+}
+.chip-gallery-text.text-left {
+    text-align: center!important;
+    margin: 10px 0px 15px;
+}
+.chip-gallery-heading{
+    margin-bottom: 5px;
+   
+}
+
+.research-ser-content{
+    width: 70%;
+    text-align: left;
+}
+.research-icon {
+    width: 20%;
+}
+.topinner ul{
+    margin-right: 0px !important;
+}
+
+.topinner{
+    flex-direction: column;
+}
+.searchstaff .searchinput input {
+    border: solid 0px #f5f5f5;
+}
+
+.searchinput input[type="text"] {
+    background: url(../images/search.png) no-repeat  right 15px center;
+    background-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    height: 32px;
+    margin-top: 8px;
+    padding: 20px;
+    border: solid 1px #f5f5f5;
+}
+
+.topheaderlink {
+    padding: 8px 0px;
+    background: #fbfbfb;
+}
+}
+@media(max-width: 420px){
+    /* inspire */
+
+    .spinoffs-company-logo-inner{
+        width: 100%;
+    }
+    
+ /* inspire end */
+
+
+    
+    .filtersearch {
+        
+        padding: 5px 20px;
+    }
+    .filteronresearchdomains .newestfirst{
+        width: 100%;
+    }
+    .filteronresearchdomains .newestfirst.mr-3{
+margin-right: 0px!important;
+    }
+
+}
+@media(max-width: 400px){
+    .barcodesection-text::after{
+        display: none;
+    }
+    .barcodesection-text .sub-title.text-right{
+text-align: center!important;
+    }
+
+    .barcodesection {   
+     
+        flex-direction: column-reverse;
+    }
+    .academic-staff-img img {
+        width: 100%;
+        height: auto;
+    }
+    .academic-staff-img-cover{
+        flex-direction: column;
+    }
+   
+    .contact-michiel.ml-4{
+text-align: center;
+margin-left: 0px!important;
+    }
+   
+    .telcolor a{
+        margin-top: 10px;
+    }
+    .academic-staff-text-cover{
+        text-align: center;
+    }
+    .academic-staff-text-cover{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .chip-inner.chip-inner-img{
+        width: 100%;
+    }
+    .service-banner-title {
+        font-size: 25px;
+    }
+    .chip-inner.interested-img {
+        width: 100%;
+    }
+    .analog-circuits-btn {
+   
+        padding: 8px 0px;
+        line-height: 0px;
+    }
+    .analog-circuits-btn p {
+        font-size: 10px;
+    }
+    .details-team-member-left .academic-staff-text-cover{
+        text-align: left!important;
+    }
+}
