@@ -1,0 +1,1154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+.table td, .table th {
+  
+    vertical-align: middle!important;
+    
+}
+
+.btn{
+    background: transparent;
+}
+.btn:focus{
+    box-shadow: none!important;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.dropdown-toggle::after{
+    display: none!important;
+}
+.bellimg a i {
+    font-size: 20px;
+    color: #ffff;
+}
+.bellimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bellimg a span {
+    position: absolute;
+    display: inline-block;
+    background: #494547;
+   
+    line-height: 12px;
+    text-align: center;
+    right: 0px;
+    color: #ffff;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+    font-size: 11px;
+}
+.admindropdown .dropdown-toggle{
+    font-size: 13px;
+    color: #fff!important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.logo.text-center {
+    width: 65px;
+    margin: auto;
+}
+.adminprofile img {
+    width: 45px;
+    object-fit: cover;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #e8e8e8;
+    display: flex;
+
+}
+.sidebaradmin .adminprofile img{
+    border: 3px solid #ffff;
+}
+
+.navbar {
+    
+    padding: 13px 25px;
+    background: #e66c87;
+    border: none;
+    border-radius: 0;
+    
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+
+.barbtn {
+    background: #ffffff;
+    width: 40px;
+    border-radius: 50%;
+    
+    height: 38px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0.2rem rgb(0 5 10 / 4%);
+    box-shadow: rgb(0,0,0,0.5);
+}
+button#sidebarCollapse {
+    color: #e66c87;
+    font-size: 20px;
+}
+.button#sidebarCollapse:focus {
+    
+    box-shadow: none!important;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #ffffff;
+    color: #fff;
+    transition: all 0.5s;
+  
+}
+.form-group.has-search {
+    position: relative;
+    width: 280px;
+}
+
+
+.form-group.has-search input {
+    border-radius: 20px 20px 20px 20px;
+    padding: 0.375rem 1.2rem;
+}
+.form-group.has-search{
+    margin-bottom: 0rem!important;
+}
+.form-control{
+    border: 0px;
+}
+::placeholder{
+
+    font-size: 12px;
+
+}
+
+span.fa.fa-search.form-control-feedback {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    color: #bababa;
+    border-radius: 94px;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+
+/* .requestimg img {
+    width: 35px;
+} */
+
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 5px;
+    background: #ffffff;
+}
+
+
+
+
+
+.sidebaradmintxt a {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+    text-transform: capitalize;
+}
+#sidebar ul li a img{
+    width: 35px;
+} 
+#sidebar ul li a {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3b3a3a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#sidebar ul li:hover{
+    background-color: #dcdedf40;
+    transition: all 0.5s;
+}
+#sidebar ul li {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 2px 0px 0px 14px;
+    cursor: pointer;
+}
+.sidebaradmin {
+    background: #dcdedf;
+    padding: 12px 20px;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+  
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+.maincontent {
+    padding: 20px;
+    background: #edf1f5;
+}
+.massagertxt h3,
+.massager h3,
+thead tr th,
+.massagername,
+.assignedpatient,
+.view a{
+font-size: 25px;
+font-family: 'Open Sans', sans-serif;
+color: #3b3a3a;
+font-weight: 600;
+text-transform: capitalize;
+}
+.massager {
+    padding-bottom: 20px;
+}
+.massagersearch .form-control {
+    border: 1px solid #bababa;
+}
+.massagertxt h3{
+    color: #555555;
+    font-size: 18px;
+}
+.massagerlist {
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+
+/* table */
+.massagername{
+    font-size: 14px;
+    color: #767676;
+    text-transform: uppercase;
+}
+.view a {
+    color: #ffffff;
+    border: 1px solid #e66c87;
+    font-size: 11px;
+    background-color: #e66c87;
+    padding: 5px 25px;
+    border-radius: 50px;
+    font-weight: 400;
+   
+}
+li.view a:hover,
+.lymphatic a:hover,
+.lymphatic.accpet a:hover,
+.loginbtn:hover,
+.speciality ul li a:hover,
+.contactinfo ul li a:hover {
+    color: #e66c87!important;
+    background: white;
+    transition: all 0.5s;
+}
+
+.assignedpatient .lymphatic a,
+.assignedpatient .lymphatic.accpet a{
+background-color: transparent;
+border: 0px;
+}
+.lymphatic a,
+.lymphatic.accpet a {
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f38299;
+    background-color: #fce5ea;
+    border: 1px solid #fce5ea;
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+.lymphatic.accpet a{
+    color: #51b08d;
+    background: #eaf8f3;
+    border: 1px solid #eaf8f3;
+}
+li.del a i {
+    color: #a19f9f;
+    font-size: 20px;
+}
+.assignedpatient,
+.package{
+    color: #3b3a3a;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.package{
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+thead {
+    background: #616060;
+}
+thead tr th{
+    
+color: #ffffff;
+
+font-size: 14px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f4f2f2!important
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff!important;
+}
+
+
+
+/* 
+massager requests */
+
+.requestdate span {
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 500;
+    color: #605858;
+    text-transform: capitalize;
+}
+.threedots a i {
+    font-size: 20px;
+    color: #cbcbcb;
+}
+td.assignedpatient.email {
+    text-transform: lowercase;
+    font-weight: 600;
+    color: #727070;
+}
+
+  .admin-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #ffffff;
+    position: absolute;
+    top: -11px;
+    right: 8px;
+}
+.dropdown-menu {
+    right: 0px!important;
+   left: auto!important;
+    padding: 0px 0px!important;
+    top: 50px!important;
+}
+.dropdown-menu{
+   min-width: 130px!important;
+   border-radius: 0px;
+}
+.threedots .dropdown-menu {
+    right: 0px!important;
+    left: -65px!important;
+    padding: 0px 0px;
+    top: -26px!important;
+    border-radius: 0px!important;
+}
+.threedots .btn{
+    padding: 0px 0px!important;
+}
+.threedots.mr-5.dropdown.show a span i {
+    color: black;
+}
+.dropdown-item {
+    padding: 8px 20px!important;
+    font-weight: 500!important;
+    color: #767676!important;
+    text-align: center!important;
+    font-size: 11px!important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.threedots .dropdown-item:hover,
+.admindropdown .dropdown-item:hover {
+    color: #ffffff!important;
+    text-decoration: none;
+    background-color: #e66c87;
+    transition: all 0.5s;
+}
+.admindropdown .dropdown-item:hover {
+    background-color: rgb(220, 222, 223) !important;
+    color: black!important;
+}
+.admindropdown .dropdown-menu a {
+    color: #020202;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.admindropdown .dropdown-menu a img {
+    width: 12px;
+    margin-right: 5px;
+}
+.admindropdown .dropdown-menu {
+    min-width: 150px!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notification h3,
+.notification p{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    max-width: 165px;
+
+}
+.notification p{
+    color: #7a7b7e;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1;
+    padding: 5px 0px;
+}
+.notificationtime h3{
+    color: #343c4d;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.belldropdown {
+    background-color: #ffff;
+    border-radius: 5px;
+  
+    width: 315px;
+    z-index: 99;
+    right: -20px;
+    top: 80px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.belldropdown ul li{
+    padding: 12px 12px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.belldropdown ul li:hover {
+    background: #e75373;
+    transition: all 0.8s;
+}
+.belldropdown ul li:hover .notification h3,
+.belldropdown ul li:hover .notification p,
+.belldropdown ul li:hover .notificationtime h3{
+    color: white;
+    transition: all 0.8s;
+}
+.seemorebtn:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+ul.spacedown li span:hover,
+.personalinfo ul li h5:hover{
+    color: #e75373;
+    transition: all 0.8s;
+}
+.personalinfo ul li h5:hover {
+    color: #f76584;
+   
+}
+
+
+.belldropdown .adminprofile img {
+    width: 48px;
+  
+    height: 48px;
+   
+    border: 0px solid #e8e8e8;
+}
+.seemorebtn a{
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+.seemorebtn.text-center {
+    padding: 10px;
+}
+
+.belldropdown {
+    opacity: 0;
+    /* display: none; */
+    visibility: hidden;
+}
+.bellimg:hover .belldropdown{
+    opacity: 1;
+    transition: all 0.8s;
+  top: 36px;
+    visibility: visible;
+}
+.belldropdown .admin-arrow-up {
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 21px solid #ffffff;
+    position: absolute;
+    top: -15px;
+    z-index: -1;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #e66c87;
+    /* box-shadow:0 0 3px red; */
+}
+.custom-control-label::before {
+    border: 1px solid gray;
+    background-color: #ffffff;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none!important;
+}
+
+.custom-control-input {
+    position: absolute;
+   
+    left: 0px;
+    top: 6px;
+}
+
+
+
+
+
+
+
+/* login */
+
+.logininner{
+    width: 520px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    border-radius:15px;
+    padding: 30px 50px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)
+}
+
+.login-bg{
+   
+    background: url("../image/formbg.png");
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.log_bg{
+    background-color: #e66c87 ;
+ min-height: 863px;
+ position: relative;
+}
+.isideicon{
+    position: relative;
+}
+.isideicon img{
+    position: absolute;
+    width: 35px;
+    z-index: 9;
+    left: 15px;
+}
+.form-group.isideicon input {
+    border: 1px solid #a4a3a3;
+    padding: 14px 60px;
+    border-radius: 50px;
+}
+.form-group.isideicon input::placeholder{
+  
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #767676;
+    font-weight: 300;
+}
+
+.loginhead  h3,
+.loginbtn{
+    
+    font-size: 30px;
+    color: #444445;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.loginbtn{
+    background-color: #f54a75;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 20px 0px;
+    border: 1px solid #f54a75;
+}
+.loginlogo {
+    width: 140px;
+    margin: 0px auto;
+  
+    padding-top: 20px;
+}
+.loginhead {
+    padding: 50px 0px;
+}
+.signupleft h3,
+.signupright a{
+    color: #767676;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.signupright a{
+    color: #f54a75;
+    font-weight: bold;
+}
+.signup p, .signup p span a {
+    color: #767676;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    max-width: 398px;
+    margin: auto;
+    font-weight: 400;
+}
+.signup p span a{
+    color: #f54a75;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* profile */
+
+.totalpatient{
+    background-color: #e75373;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.totalpatientinner {
+    z-index: 1;
+    width: 100%;
+   
+    padding: 10px 30px;
+}
+
+.totalpatient .totalpatientimg{
+    position: absolute;
+    width: 100%;
+  
+    bottom: 0;
+}
+.patientcount span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 500;
+   
+    line-height: 1;
+}
+.patientcount h3{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+}
+.patientimginner img {
+    width: 30px;
+    line-height: 38px;
+}
+.patientimginner {
+    background-color: #ffffff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ee7790;
+}
+.profilepage .maincontent{
+    padding: 40px 30px;
+}
+.profileaboutus,
+.schedule {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.profileimg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.abouthead h3{
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.aboutpara p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #797979;
+    padding-top: 15px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+}
+.profileimg img {
+    width: 230px;
+    z-index: 0;
+}
+.spacebtween{
+    margin-top: 30px;
+}
+
+.profilepage tbody {
+    background: #ffffff;
+}
+.schedule {
+    padding: 15px 0px;
+    
+    height: 100%;
+}
+.profilepage .massagertxt h3 {
+    padding-left: 30px;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.leftspace{
+    padding-left: 30px!important;
+}
+.rightspace{
+    padding-right: 30px!important;
+}
+
+
+
+.spacebtween.tablechange .table-striped tbody tr:nth-child(odd),
+.spacebtween .table-striped tbody tr:nth-child(even) {
+    background-color: #f4f2f2!important;
+  
+    border-bottom: 1px solid #e5e4e4;
+  }
+  .spacebtween.tablechange .table-striped tbody tr:nth-child(even),
+  .spacebtween .table-striped tbody tr:nth-child(odd) {
+    background-color: #ffffff!important;
+    border-bottom: 1px solid #e5e4e4;
+  }
+  .profilepage .table td{
+      border: 0px!important;
+  }
+.personalhead h3{
+    color: #555555;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #f3f2f2;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+
+}
+.personalinfo{
+    padding-bottom: 20px;
+}
+.personalinfo ul li span{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #adacac;
+    text-transform: capitalize;
+}
+.personalinfo ul li h5{
+font-size: 12px;
+font-weight: 600;
+font-family: 'Open Sans', sans-serif;
+color: #555555;
+}
+.profilepage #sidebar ul li {
+   border: 0px;
+}
+.speciality ul li a{
+    font-size: 9px!important;
+    font-weight: 500!important;
+    font-family: 'Open Sans', sans-serif!important;
+    color: #000!important;
+    text-transform: uppercase!important;
+    padding: 8px 10px;
+    background-color: #edf1f5;
+    border: 1px solid #edf1f5;
+
+}
+.speciality ul li {
+    padding: 3px 5px 3px 0px!important;
+}
+.totalhours ul li h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #e66c87;
+}
+.totalhours ul li span{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #767676;
+    margin-left: 10px;
+
+}
+
+.ratingstar.d-flex span {
+    color: #d1d0d0;
+    font-size: 20px;
+    margin-right: 6px;
+}
+.checked{
+    color: #d8bd25!important;
+}
+.ratingstar h3{
+    color: #e66c87;
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.mailto{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400!important;
+    font-size: 13px!important;
+    color: #5c5b5b!important;
+    text-transform: lowercase!important;
+}
+.telephone{
+    color: #464545!important;
+    font-size: 13px!important;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 400!important;
+    text-transform: capitalize;
+}
+.addresslink{
+    font-size: 13px!important;
+    font-weight: 400!important;
+    /* font-family: 'Open Sans', sans-serif;!important; */
+    text-transform: capitalize!important;
+}
+
+.contactinfo ul li a img {
+    width: 22px!important;
+    margin-right: 6px;
+}
+.profilepage #sidebar ul li{
+    padding: 0px 0px 0px 0px;
+}
+.personalcover {
+    padding: 15px 18px;
+}
+.contactinfo ul li {
+    padding-bottom: 8px!important;
+}
+
+.appointmentcolor{
+background-color: #f76584;
+}
+
+.appointmentcolor .patientimginner{
+    border: 10px solid #fa7b96;
+}
+
+.incomecolor .patientimginner{
+    border: 10px solid #f795a7;
+}
+.incomecolor{
+    background-color: #f77f99;
+}
+.profilepage #sidebar ul li:hover{
+    background-color: transparent;
+}
+
+.profilepage .assignedpatient{
+font-family: 'Roboto';
+text-transform: uppercase;
+}
+.closecolor{
+    color: #e66c87;
+}
+.massagerfont .massagername {
+    font-family: 'Roboto';
+}
+.profilepage thead tr th{
+text-transform: uppercase;
+}
+
+.profilepage .sidebaradmintxt a,
+.profilepage .sidebaradmintxt a span{
+font-size: 14px;
+color: #343c4d;
+font-weight: bold;
+font-family: 'Open Sans', sans-serif!important;
+}
+.profilepage .sidebaradmintxt a span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #6f6f6f;
+    line-height: 0.8;
+}
+
+.payid,
+.paydate,
+.paypack,
+.payamount{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #555555;
+}
+.paynmae{
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 14px;
+    color: #767676;
+}
+.payamount{
+    font-weight: bold;
+}
+.paypack{
+    font-weight: 400;
+}
+.paydate{
+    font-weight: 400;
+    color: #5d5d5d;
+}
+ul.spacedown li {
+    padding: 3px 0px!important;
+}
+
+/* datatable */
+table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after{
+right: 40%!important;
+content: "↓"!important;
+    transform: translate(50%)!important;
+}
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting_asc:before{
+    right: 40%!important;
+    content: "↑"!important;
+    transform: translate(-50%)!important;
+}
+
+/* table.dataTable>thead .sorting:before, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_desc:before,
+table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after, */
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate.paging_simple_numbers{
+    display: none!important;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 1199px) {
+li.view.d-flex {
+    margin: 0px 15px;
+}
+.threedots {
+    margin: 0px 0px 0px 15px;
+}
+
+.patientcount span {
+    
+    font-size: 25px;
+   
+}
+.patientcount h3 {
+    font-size: 13px;
+}
+.totalpatientinner {
+   
+    padding: 8px 20px;
+}
+.totalpatientinner {
+    padding: 8px 10px;
+}
+.patientimginner img {
+    width: 25px;
+}
+.patientimginner {
+   
+    width: 65px;
+    height: 65px;
+}
+.schedule {
+    padding: 20px 0px;
+
+}
+}
+@media (max-width: 991px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    .profilepage .massagertxt h3 {
+       
+        font-size: 18px;
+    }
+    .profileaboutus, .schedule {
+     
+        padding: 20px;
+    }
+
+    .aboutpara p {
+        font-size: 12px;
+        padding-top: 6px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .topnavcover {
+        flex-direction: column;
+        align-items: start!important;
+        justify-content: end!important;
+    }
+    .patientcount {
+       padding-top: 15px;
+    }
+    .totalpatientinner{
+        flex-direction: column-reverse;
+        padding: 20px 0px;
+    }
+    .repongap{
+        margin-top: 30px;
+    }
+    .belldropdown {
+        left: -15px;
+    }
+    .belldropdown .admin-arrow-up{
+    left: 10px;
+    }
+    .logininner {
+        width: 510px;
+    }
+    .totalpatient {
+      
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .abouthead h3 {
+    
+        z-index: 99;
+        position: relative;
+    }
+}
+
+@media (max-width: 576px) {
+.massagertxtcover {
+    flex-direction: column;
+}
+.loginlogo {
+    width: 100px;
+  
+    padding-top: 0px;
+}
+.loginhead {
+    padding: 20px 0px;
+}
+.massagertxt{
+    padding-bottom: 5px;
+}
+.logininner {
+    width: 420px;
+}
+.loginbtn {
+   
+    font-size: 15px;
+   
+    margin: 10px 0px;
+}
+.loginhead h3{
+    font-size: 20px;
+}
+.isideicon img {
+   
+    width: 27px;
+}
+.form-group.isideicon input {
+    
+    padding: 12px 46px;
+}
+}
+
+@media (max-width: 480px) {
+    .logininner {
+        width: 300px;
+        padding: 15px 20px;
+    }
+    .signup {
+        flex-direction: column;
+    }
+    .form-group.has-search {
+     
+        width: 100%;
+    }
+}
