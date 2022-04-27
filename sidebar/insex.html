@@ -1,0 +1,162 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+
+  </head>
+  <style type="text/css">
+ 
+.menu-drawer {
+    width: 320px;
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    left: -550px;
+    top: 0;
+    border-radius: 0px 20px 20px 0px;
+    -webkit-transition: left linear 0.5s;
+    transition: left linear 0.5s;
+    z-index: 99;
+}
+
+.toggle-menu {
+    width: 31px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    z-index: 1000;
+    left: 50%;
+}
+body.sidemenuopen .menu-drawer {
+    left: 0px;
+
+    -webkit-transition: left linear 0.7s;
+    transition: left linear 0.7s;
+}
+
+
+
+
+    
+
+    .topheader .menublock a {
+    display: block;
+}
+.topheader .menublock a {
+    display: block;
+}
+.toggle-menu {
+    width: 31px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    z-index: 1000;
+}
+body.sidemenuopen:after {
+    opacity: 1;
+    visibility: visible;
+}
+.sidemenuopen:after {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: 0.7s all;
+    transition: 0.7s all;
+    opacity: 0;
+    visibility: hidden;
+}
+body{
+    background: hotpink;
+}
+.sidemenuopen{
+    background-color: ;
+}
+</style>
+  <body>
+   
+
+  
+
+ <div class="menublock">
+          <a href="notification-list.html" class="bellicon"><img src="images/bell-icon.svg" alt=""></a>
+         
+             <a class="toggle-menu" href="#"><i></i><i></i><i></i></a>
+
+<div class="menu-drawer">
+  <div class="sidebarcover">
+<div class="sidebarhead">
+  <img src="images/mselect-profile.png" alt="">
+</div>
+  <div class="sidebarinner">
+<h3>
+  john doe
+</h3>
+<p>
+  nursing
+</p>
+
+<div class="sidebareiview">
+ 
+  <img src="images/review_img.png">
+  <h2>4.2</h2>
+</div>
+ 
+</div>
+</div>
+
+  
+<ul>
+ <li><a href="user_massager_profile.html">
+  <img src="images/myprofile-icon.svg" alt=""> 
+  my profile</a></li>
+ <li><a href="notification-list.html">
+  <img src="images/request-icon.svg" alt=""> request</a></li>
+ <li><a href="payment_method.html">
+  <img src="images/payment-icon.svg" alt=""> payment</a></li>
+ <li><a href="speciality_list.html">
+  <img src="images/package-icon.svg" alt=""> speciality</a></li>
+ <li><a href="login.html">
+  <img src="images/logout-icon.svg" alt=""> logout</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  $(function() {
+ $(".toggle-menu").click(function() {
+   $(this).toggleClass("active");
+   $('body').toggleClass("sidemenuopen");
+ });
+});
+</script>
+
+  </body>
+</html>
