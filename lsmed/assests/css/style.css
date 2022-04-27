@@ -1,0 +1,1691 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+.blogrightxt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
+.address ul li a:hover,
+.forgetpass a:hover{
+   color: #a3976e;
+   transition: all 0.5s;
+}
+ 
+a.nav-link.undline {
+    position: relative;
+}
+.undline::after
+{
+    display:block;
+    content: '';
+    border-bottom: solid 1px white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+
+
+}
+
+.undline:hover.undline::after{
+    transform: scaleX(1.5); 
+    transition: all 0.5s;
+    width: 100%;
+}
+a.navbar-brand:hover,
+a.nav-link:hover {
+    color: white;
+}
+a.nav-link.undline {
+    margin: 0px 10px;
+}
+ul.navleftpart {
+    display: flex;
+    position: relative;
+    margin-bottom: 0px;
+}
+.btn.btn-secondary{
+    background-color: #244145;
+}
+.btn.btn-secondary:focus{
+    box-shadow: none;
+}
+header{
+    box-shadow: 0 2px 8px -1px rgb(0 0 0 / 20%);
+}
+.navbar-brand,
+.navbar-brand span{
+    font-size: 48px!important;
+    text-transform: lowercase;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  
+}
+.navbar-brand span{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.nav-link{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+   
+}
+
+/* .register{
+    position: relative;
+}
+.register::after{
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 40%;
+    content: "";
+    top: 13px;
+    right: 0px;
+    transform: rotate(15deg);
+   
+} */
+
+.slidertopinner .owl-item.active.center .item img{
+    filter: none!important;
+      
+}
+.slidertopinner .owl-item.active .item img{
+   
+    filter: grayscale(100%)!important;
+}
+nav.navbar.navbar-expand-lg,
+header{
+    background-color: #244145;
+}
+.navbar{
+    padding: 0rem 1rem;
+}
+.navbar-brand{
+    padding: 0px 0px;
+}
+.searchbox {
+    position: absolute!important;
+   
+    top: 55px;
+    right: 246px;
+}
+ .searchcover.mystyle{
+     display: block!important;
+ }
+ .searchcover{
+     display: none!important;
+ }
+ .nav_head.fixedHeader ul li a {
+    color: #000;
+}
+.nav_head.fixedHeader form button {
+    color: white;
+    background-color: orange;
+}
+
+.fixedHeader {
+    position: fixed!important;
+    padding: 5px 100px;
+    left: 0px;
+    
+    
+    animation-name: animationFade;
+   
+    
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, .2);
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+}
+.fixedHeader nav.navbar {
+    padding: 0px 38px;
+}
+@-webkit-keyframes animationFade {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fixedHeader .searchbox {
+    position: absolute;
+    width: 250px;
+    right: 0px;
+    top: 53px;
+}
+
+
+.bannertxt h1,
+.bannertxt p{
+font-size: 60px;
+font-family: 'Open Sans', sans-serif; 
+font-weight: bold;
+color:white;
+}
+
+.bannertxt p {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 35px 0px;
+}
+.bannerbtn a {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 5px 0px #00000069;
+}
+.bannerbtn.text-center {
+    padding: 20px 0px;
+}
+.banner {
+    background-color: #244145;
+    min-height: 975px;
+}
+
+.bannerimg {
+    background-image: url(../images/banner-center.png);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 975px;
+    position: relative;
+}
+
+.bannertxt.text-center {
+    padding: 65px 0px;
+}
+.Course_Categories_head h3{
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+.Course_Categories_head h3::after {
+    content: "";
+    background-color: black;
+    width: 50%;
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+}
+
+
+.coursecat{
+    padding: 85px 0px;
+    background-color: #f4f8ff;
+}
+.courseimgtxt {
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagewhite {
+    display: none;
+}
+.development:hover .imagewhite {
+    display: block;
+    margin: auto;
+    
+}
+.development:hover .imagered{
+    display: none;
+}
+.development {
+    width: 15.7%;
+    margin: 5px;
+    border: 1px solid gray;
+}
+.courescat {
+    padding: 5px 0px;
+}
+.courescat h3{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+
+
+}
+img.imagered,
+.imagewhite {
+    width: 60px;
+    margin: auto;
+}
+
+.courseimgtxt:hover {
+    background: #244145;
+    transition: all 0.5s;
+}
+.courseimgtxt:hover .courescat h3{
+    color:white;
+    
+}
+.Course_Categories {
+    padding-top: 100px;
+}
+
+.coursecat.bg{
+    background-color: white;
+}
+
+.top_inner h3{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.top_inner p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+}
+
+.viewmore a {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 11px 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+.toptxt h4{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.checked {
+    color: orange;
+  }
+
+  .price h3 {
+    font-size: 24px;
+    color: #244145;
+    font-family: 'Roboto', sans-serif;
+}
+.price {
+    padding-top: 20px;
+}
+.star span {
+    font-size: 13px;
+}
+.toptxt.top_inner {
+    padding: 22px;
+}
+
+.topimage {
+    position: relative;
+    display: flex;
+}
+
+.topimage::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(36 65 69 / 70%);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+.topimage:hover.topimage::after{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.plusicon {
+    position: absolute;
+    left: 50%;
+    font-size: 60px;
+    color: white;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0;
+}
+.topimage:hover .plusicon{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.top_coursesgrid{
+    padding-top: 100px;
+}
+.address h3,
+.addtxt ul li span,
+.copyrleft ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+}
+.footbg {
+    background-color: #241400;
+}
+
+.address ul li a,
+.addtxt a,
+.copyrright p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+}
+.space{
+    padding-top:20px;
+}
+.addtxt {
+    max-width: 200px;
+}
+.col-lg-2 .address h3{
+    padding-bottom: 10px;
+}
+.col-lg-2 .address ul li{
+    padding: 5px 0px;
+}
+
+.paddbottom{
+    padding-bottom: 60px;
+}
+.copyright {
+    position: relative;
+}
+.copyright::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(124, 122, 122);
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    top: -20px;
+}
+
+.toprated-bg {
+    position: relative;
+    z-index: 9;
+}
+.toprated-bg img{
+    z-index: 1;
+}
+.toprated-bg::after{
+    content: "";
+    background-color: #c7166f;
+    width: 100%;
+position: absolute;
+    height: 100%;
+    left: 0px;
+    z-index: -1;
+    top: 0px;
+
+}
+
+.toprated-bg img {
+    z-index: -1;
+    display: flex;
+    opacity: 0.3;
+}
+h3.imagtxt {
+    position: absolute;
+   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    
+    transform: translate(0%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.toprated-bg.trending::after{
+background-color: #6c16c7;
+}
+
+.toprated-bg.noteworthy::after{
+    background-color: #2516c7;
+    }
+    
+.achiverinner{
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ececec;
+    margin: 15px 0px;
+}
+
+.top_coursesgridinner{
+    border: 2px solid #ececec;
+   
+}
+
+.achiverhead h3{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.achiverpara p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.achiverimg{
+    padding-bottom: 20px;
+}
+
+.achiverhead{
+    padding-bottom: 10px;
+}
+
+.achiverinner:hover,
+.top_coursesgridinner:hover {
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+    transition: all 0.5s;
+  }
+
+  .readmoreleft ul li {
+      color: #244145;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+  }
+  .heart li i {
+    font-size: 15px;
+    padding: 0px 5px 0px 15px;
+    color: gray;
+}
+  .commenttxt{
+      font-size: 15px;
+     
+  }
+  i.fa.fa-long-arrow-right {
+    display: flex;
+    padding-left: 10px;
+}
+.calimg ul li i {
+    padding-right: 10px;
+}
+.calimg ul li {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.heart li i:hover{
+color: #244145;
+}
+
+.calender {
+    padding-bottom: 15px;
+}
+.readmore {
+    padding: 12px 0px;
+}
+
+#form {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+  
+    padding: 2px;
+    border-radius: 50px; /*you can remove this to avoid rounded corners on the form*/
+    position: relative;
+    margin: auto;
+  }
+  
+  .instructorhead h3 {
+    padding: 25px 0px;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+#form input {
+    flex-grow: 3;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 0px 0px 40px;
+    min-height: 55px;
+    
+}
+input.one {
+    position: absolute;
+    right: 0px;
+    font-size: 16px;
+    background: #244145;
+    padding: 15px 50px!important;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto';
+    border: 1px solid #244145!important;
+    
+}
+  
+
+  .instructor{
+      background-image: url(../images/footerbanner.jpg);
+      min-height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-attachment: fixed;
+     
+  }
+::placeholder{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.instructor::before{
+    background-color: #ffffffc4;
+    content: " ";
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 0;
+}
+.protfolieoimg img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.protfolieotxt h3{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.protfolieotxt p{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.protfolieotxt {
+    padding-left: 10px;
+}
+.clientcover .row {
+    border-bottom: 2px solid #eff0f1;
+}
+.para p {
+    font-size: 18px;
+    font-style: italic;
+    color: #4c4c4c;
+    font-family: 'Roboto', sans-serif;
+    
+    padding: 35px 0px 40px 25px;
+}
+.qute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 75px;
+}
+.clientinner {
+    position: relative;
+    padding-bottom: 65px;
+}
+.clientcover{
+    position: relative;
+}
+.clientcover::before {
+    position: absolute;
+    content: " ";
+    width: 2px;
+    left: 50%;
+    height: 77%;
+    background-color: #eff0f1;
+}
+.amara-embed{
+    width: 100%!important;
+    border: 10px solid #edf1f2;
+    border-radius: 10px;
+}
+
+.halfsliderowl .owl-nav,
+.slidertopinner .owl-dots,
+.topinner .owl-dots{
+    display: none;
+}
+
+.slidertop p{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.slidertopinner .owl-nav,
+.topinner .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -50%);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: black;
+    font-size: 30px;
+    background-color: transparent;
+   
+    
+  
+}
+
+.one{
+    border: 1px solid #244145;
+}
+.bannerbtn a:hover,
+input.one:hover {
+    
+    background-color:white;
+    color: #244145;
+    transition: all 0.5s;
+}
+
+.viewmore a:hover{
+color: white;
+background-color: #244145;
+transition: all 0.5s;
+}
+.topco .plusicon,
+.trendingcors .plusicon  {
+    position: absolute;
+    left: 50%;
+    font-size: 10px;
+    color: white;
+    top: 95%;
+    padding: 5px 10px;
+    background: #781414;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 1;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #244145;
+}
+/* .navbar{
+    position: fixed!important;
+    width: 100%;
+    left: 0px;
+} */
+/* nav.navbar.navbar-expand-lg {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+} */
+/* .topco .toptxt h4,
+.trendingcors .toptxt h4 {
+    font-size: 15px;
+}
+
+.topco .top_inner p,
+.trendingcors .top_inner p {
+    
+    font-size: 12px;
+}
+
+.topco .price h3,
+.trendingcors .price h3  {
+    font-size: 18px;
+} */
+.trendingcors .plusicon {
+    background: #244145;
+}
+/* portfolie */
+.cont {
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .gallery img {
+    width: 100%;
+  }
+  
+/* portfolie end*/
+
+
+/* .registerfrom */
+  /* .registerinner {
+    height: 87.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+
+.registerinner .row,
+.lofinform .row{
+    justify-content: center;
+}
+
+
+.registerhere h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 35px;
+    border-bottom: 2px solid;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .registertopcover{
+    
+} */
+
+.registercover .panel-body{
+    -webkit-clip-path: circle(69.7% at 50% 30%);
+clip-path: circle(69.7% at 50% 30%);
+padding: 88px 20px 180px 20px;
+background-image: url("../images/lbg.jpg");
+background-position: top;
+background-size: cover;
+}
+.registertopcover {
+    height: 100%;
+    padding: 60px 0px 150px 0px;
+    background-color: #244145;
+}
+
+/* .registerfrom end*/
+
+.lofinform .panel-body
+{
+    -webkit-clip-path: circle(75.8% at 40% 22%);
+    clip-path: circle(75.8% at 40% 22%);
+    
+    padding: 88px 20px 180px 20px;
+    background-image: url("../images/lbg.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.forgetpass a {
+    color: white;
+    text-transform: capitalize;
+    padding: 2px 0px 15px 0px;
+    display: block;
+}
+/* login end */
+
+
+/* blog */
+.headblog {
+    padding: 30px 0px;
+}
+
+.headblog h3{
+    color: #000;
+    font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+.blogrightxt a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Roboto';
+    margin-bottom: 0px;
+    color: black;
+    line-height: 1;
+}
+.blogright .blogrightxt h3{
+    margin-bottom: 10px!important;
+}
+.category a,
+.categorydate a {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    color: #244145;
+    font-weight: 500;
+}
+
+.nav-item.active{
+    position: relative;
+}
+.nav-item.active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255 255 255);
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.topcourese,
+.blogtop .Course_Categories_head.text-center {
+    padding-bottom: 50px;
+} 
+.btn-info {
+    color: #fff!important;
+    background-color: #28080800!important;
+    border-color: #ffffff!important;
+    font-weight: bold!important;
+}
+.trend h3 {
+    font-size: 20px;
+    color: white;
+    padding: 8px 0px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    background: #244145;
+    margin-bottom: 0px;
+}
+input.btn.btn-info.btn-block:hover {
+    background: #244145!important;
+    color: white!important;
+    transition: all 0.5s;
+}
+
+.blogr {
+    margin: 10px 0px;
+    background: #f3f3f3;
+}
+.blogrightimg {
+    padding: 7px 0px 7px 7px;
+}
+.blogrightxt {
+    padding: 10px 10px 0px 0px;
+}
+.blogtxt a {
+    padding: 5px 0px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #000;
+    display: block;
+}
+
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white!important;
+    background-color: #244145!important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs .nav-link{
+    color: #000!important;
+}
+  
+
+@media only screen and (max-width: 1199px) {
+    .development {
+        width: 23.9%;
+      
+    }
+    .blogrightxt {
+      
+        line-height: 1.2;
+    }
+    .blogrightxt h3,
+    .blogtxt a,
+    .blogrightxt a {
+        font-size: 13px;
+    }
+    a.nav-link.undline {
+        margin: 0px 3px;
+    }
+    .achiverinner {
+        padding: 30px;
+    }
+   
+    .toptxt h4 {
+        font-size: 16px;
+    }
+    .blogright .blogrightxt h3 {
+        margin-bottom: 8px!important;
+    }
+    .category a, .categorydate a {
+        font-size: 11px;
+    }
+    .blogtxt p {
+        padding: 8px 0px;
+        font-size: 11px;
+     
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+  .development {
+    width: 31.8%;
+}
+.blogrightxt h3 {
+    font-size: 18px;
+}
+button.navbar-toggler {
+    border: 1px solid white;
+    border-radius: 0px;
+    color: white;
+    padding: 1px 3px;
+}
+button.navbar-toggler span {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.fixedHeader .searchbox {
+    position: absolute;
+    width: 250px;
+  
+    top: 53px;
+    left: 0px;
+}
+a.nav-link.undline:hover{
+    background-color: white;
+    color: #244145;
+}
+.undline::after{
+    display: none;
+}
+a.nav-link.undline {
+    
+    padding: 6px 10px;
+}
+a.nav-link.undline {
+    margin: 0px 0px;
+}
+.bannertxt h1{
+    font-size: 40px;
+   
+}
+.searchbox {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+}
+
+.slidertop p{
+    font-size: 20px;
+}
+.bannertxt p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.achiverinner {
+    padding: 15px;
+}
+h3.imagtxt{
+    font-size: 20px;
+}
+
+.toprated {
+    margin-top: 5px;
+}
+.plusicon {
+   
+    font-size: 25px;
+}
+.toptxt.top_inner {
+    padding: 10px;
+}
+.toptxt h4,
+.achiverhead h3 {
+    font-size: 11px;
+  }
+  .top_inner p,
+  .achiverpara p {
+   
+    font-size: 10px;
+  
+    padding-top: 8px;
+}
+.price h3 {
+    font-size: 15px;
+}
+.price {
+    padding-top: 10px;
+}
+.achiverimg img {
+    width: 70px;
+}
+.achiverhead {
+    padding-bottom: 0px;
+}
+.achiverimg {
+    padding-bottom: 5px;
+}
+#form input {
+    
+    
+    min-height: 40px;
+}
+input.one {
+    
+   
+  
+    padding: 10px 30px!important;
+}
+.copyright{
+    flex-direction: column;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.blogleft {
+    margin-bottom: 10px;
+}
+  }
+
+  @media only screen and (max-width: 767px) {
+
+  .development {
+    width: 31.3%;
+}
+.blogrightxt h3 {
+    font-size: 14px;
+}
+li.nav-item.waves-effect.waves-light .nav-link {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(119px, 1fr));
+    grid-gap: 10px;
+}
+.col-lg-2 .address ul li {
+    padding: 0px 0px;
+}
+.address {
+    
+    padding-top: 15px;
+}
+.col-lg-2 .address h3 {
+    padding-bottom: 0px;
+}
+ .addtxt ul li span, .copyrleft ul li a,
+.copyrright p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+.coursecat {
+    padding: 25px 0px;
+    
+}
+.slidertop p{
+    font-size: 15px;
+}
+.Course_Categories_head h3::after {
+   
+    bottom: -10px;
+  
+}
+.top_coursesgrid {
+    padding-top: 25px;
+}
+.clientcover::before{
+    display: none;
+}
+.Course_Categories_head h3 {
+    font-size: 25px;
+}
+.Course_Categories {
+    padding-top: 30px;
+}
+
+.viewmore a {
+    font-size: 13px;
+   
+    padding: 5px 20px;
+}
+.instructorhead h3 {
+    padding: 10px 0px;
+    font-size: 25px;
+}
+.instructor {
+    
+    min-height: 175px;
+}
+.bannerbtn a {
+    font-size: 14px;
+  }
+  .top_inner h3 {
+    
+    font-size: 22px;
+  }
+  .top_inner p, .achiverpara p {
+    
+    padding-top: 0px;
+}
+.para p {
+    font-size: 13px;
+    padding: 10px 0px 10px 20px;
+}
+.qute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+}
+.protfolieoimg img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.protfolieotxt h3 {
+    font-size: 11px;
+}
+.protfolieotxt p {
+    font-size: 9px;
+}
+.clientinner {
+    
+    padding-bottom: 15px;
+}
+h3.imagtxt {
+    font-size: 15px;
+}
+.slidertop p {
+  
+   
+    padding-bottom: 15px;
+}
+.calimg ul li {
+  
+    font-size: 10px;
+    
+}
+.readmoreleft ul li {
+   
+    font-size: 11px;
+    
+}
+.heart li i {
+    font-size: 11px;
+   
+}
+.commenttxt {
+    font-size: 10px;
+}
+.Top_Courses.d-flex.justify-content-between.align-items-end {
+    flex-direction: column;
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center;
+}
+.viewmore a {
+    font-size: 10px;
+    
+}
+.top_inner {
+    padding-bottom: 10px;
+}
+.address ul li a{
+    font-size: 11px;
+}
+.top_inner {
+  
+    text-align: center;
+}
+
+.trending h3 {
+    font-size: 17px;
+    
+    padding: 8px 0px;
+}
+input[type=radio]:checked ~ label,
+.tab label{
+    font-size: 12px;
+    padding: 5px;
+}
+
+  }
+  @media only screen and (max-width: 574px) {
+
+    img.imagered, .imagewhite {
+        width: 53px;
+        margin: auto;
+    }
+    a.nav-link.undline {
+        padding: 4px 10px;
+    }
+    .nav-link {
+      
+        font-size: 12px;
+    }
+    .para p {
+        font-size: 11px;
+    }
+    .top_coursesgrid {
+        padding-top: 5px;
+    }
+    .address{
+        position: relative;
+    }
+    .address::after{
+content: " ";
+position: absolute;
+background-color: #80808033;
+bottom: -10px;
+width: 100%;
+height: 1px;
+left: 0px;
+    }
+    .addtxt a{
+       
+        font-size: 12px;
+    }
+    .address {
+        padding-top: 5px;
+    }
+    .copyright::after{
+        display: none;
+    }
+
+    .address h3{
+        font-size: 14px;
+    }
+    .top_coursesgridinner {
+       
+        margin-bottom: 8px;
+    }
+    .amara-embed{
+        border: 0px;
+    }
+    .toprated-bg {
+       
+        margin: auto;
+        width: 70%;
+    }
+    .navbar-brand, .navbar-brand span {
+        font-size: 35px!important;
+    }
+    .bannerimg {
+        min-height: 650px;
+    }
+    .paddbottom {
+        padding-bottom: 20px;
+    }
+    .col-lg-2 .address h3 {
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }
+    .addtxt{
+        max-width: 100%;
+    }
+    .col-lg-2 .address ul li {
+        padding: 0px 0px;
+        font-size: 10px;
+    }
+    .address {
+        text-align: center;
+    }
+    .top_inner h3 {
+        font-size: 16px;
+    }
+    
+    .bannerimg {
+      
+        background-size: contain;
+    }
+    .courescat h3 {
+        font-size: 14px;
+    }
+    .Course_Categories_head h3 {
+        font-size: 18px;
+    }
+    .banner {
+     
+        min-height: 520px;
+    }
+    .slidertop p {
+        font-size: 12px;
+    }
+    .item {
+        width: 200px;
+        margin: auto;
+    }
+    .courseimgtxt {
+        
+        padding: 25px 0px;
+    }
+    .bannertxt h1 {
+        font-size: 30px;
+    }
+    .bannerbtn a {
+        font-size: 12px;
+      }
+      #form input {
+       
+        
+        min-height: 40px;
+    }
+    .bannertxt p {
+        font-size: 13px;
+        
+        padding: 10px 0px;
+    }
+    input.one {
+       
+        font-size: 13px;
+        padding: 10px 30px!important;
+       
+        }
+        .instructorhead h3 {
+            padding: 10px 0px;
+            font-size: 20px;
+        }
+        .blogrightxt {
+            padding: 10px 10px 0px 0px;
+            line-height: 1.1;
+        }
+    }
+
+    @media only screen and (max-width: 525px) {
+        .development {
+            width: 30.9%;
+        }
+        #form {
+            width: 380px;
+        }
+        .fixedHeader {
+            position: fixed;
+            padding: 5px 30px;
+        }
+    }
+
+    @media only screen and (max-width: 440px) {
+        .development {
+            width: 47.5%;
+        }
+        .blogrightxt h3, .blogtxt a, .blogrightxt a {
+            font-size: 11px;
+        }
+        .blogrightxt h3 {
+            font-size: 11px;
+        }
+        .category a, .categorydate a{
+            font-size: 9px;
+        }
+        #form input {
+            min-height: 29px;
+        }
+       
+        img.imagered, .imagewhite {
+            width: 40px;
+           
+        }
+        .bannerimg {
+            min-height: 560px;
+        }
+        .courescat h3 {
+            font-size: 12px;
+        }
+        .bannertxt h1 {
+            font-size: 20px;
+        }
+        .bannertxt p {
+            font-size: 12px;
+            padding: 6px 0px;
+        }
+        .bannerbtn a {
+            font-size: 9px;
+        }
+        .development {
+            width: 46.5%;
+        }
+     input {
+            min-height: 30px;
+        }
+        input.one {
+            font-size: 10px;
+            padding: 6px 15px!important;
+        }
+        .instructor {
+            min-height: 130px;
+        }
+        #form {
+            width: 280px;
+        }
+    }
+
+    @media only screen and (max-width: 370px) {
+        .bannerimg {
+            min-height: 510px;
+        }
+    }
+
+
+    <div class="userdetails pb-3">
+                      <h3>
+                        User Details
+                      </h3>
+                    </div>
+                     <form>
+                        <div class="inputmain">
+                            <img src="images/speciality-icon.svg">
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                         </div> 
+                        <div class="inputmain">
+                           <img src="images/experience-icon.svg">
+                           <input id="birthofdate" type="text" class="form-control" name="birthofdate" placeholder="Birth of Date">
+                        </div> 
+                        <div class="inputmain">
+                          <img src="images/speciality-icon.svg">
+                          <input id="age" type="text" class="form-control" name="age" placeholder="Age">
+                       </div> 
+                      <div class="inputmain">
+                         <img src="images/experience-icon.svg">
+                         <input id="language" type="text" class="form-control" name="language" placeholder="Language">
+                      </div> 
+                      <div class="inputmain">
+                        <img src="images/speciality-icon.svg">
+                        <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="Phone Number">
+                     </div> 
+                    <div class="inputmain">
+                       <img src="images/experience-icon.svg">
+                       <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+                    </div> 
+                    <div class="inputmain">
+                      <img src="images/speciality-icon.svg">
+                      <input id="address" type="text" class="form-control" name="address" placeholder="Address">
+                   </div> 
+                  <div class="inputmain">
+                     <img src="images/experience-icon.svg">
+                     <input id="disease" type="text" class="form-control" name="disease" placeholder="Disease">
+                  </div> 
+                      
+                        
+<div class="gender">
+  <h3>
+    Gender
+  </h3>
+</div>
+<div class="personalradio">
+  <label class="custoumradio custoumradiobtn" for="optiong1" checked="checked" name="radio">Female
+  <input type="radio" name="options" value="option_g1" id="optiong1">
+  <span class="checkmark"></span>
+  </label>
+
+  <label class="custoumradio custoumradiobtn" for="optiong2" checked="checked" name="radio">Male
+  <input type="radio" name="options" value="option_g2" id="optiong2">
+  <span class="checkmark"></span>
+  </label>
+</div>
+
+                        <div class="add_packagesmain">
+                          <div class="gender">
+                            <h3>
+                              lymphatic massage package
+                            </h3>
+                          </div>
+
+                            <div class="packagefild">
+                              <div class="packageinner d-flex justify-content-between">
+
+                              
+                              <h2 class="monthadd">
+                                times
+                              </h2>
+                              <h2 class="monthadd">
+                                price
+                              </h2>
+                              <h3 class="monthadd">
+                               time
+                              </h3>
+                              <h3 class="monthadd">
+                                select package
+                               </h3>
+                            </div>
+                            </div>
+                            <div class="packagefild">
+                  
+                                <div class="packageinner">
+                                  
+                                   <h3 class="monthadd">
+                                       Hours
+                                   </h3>
+                                   <h3 class="monthadd">
+                                    10$
+                                </h3>
+                                    <input id="price" type="text" class="form-control priceadd" name="price" placeholder="$1">
+                                  
+                                    <label class="custoumradio" for="option1" checked="checked" name="radio">
+                                      <input type="checkbox" name="options" value="option_1" id="option1">
+                                      <span class="checkmark"></span>
+                                      </label>
+                                </div>
+                            </div>
+                          <div class="packagefild">
+                              <div class="packageinner">
+                                <h3 class="monthadd">
+                                    Day
+                                </h3>
+                                <h3 class="monthadd">
+                                  10$
+                              </h3>
+                                <input id="price" type="text" class="form-control priceadd" name="price" placeholder="$8">
+                                <label class="custoumradio" for="option2" checked="checked" name="radio">
+                                  <input type="checkbox" name="options" value="option_2" id="option2">
+                                  <span class="checkmark"></span>
+                                  </label>
+                              </div>
+                          </div>
+
+                          <div class="packagefild">
+                            <div class="packageinner">
+                                <h3 class="monthadd">
+                                    Month
+                                </h3>
+                                <h3 class="monthadd">
+                                  10$
+                              </h3>
+                                <input id="price" type="text" class="form-control priceadd" name="price" placeholder="$150">
+                                <label class="custoumradio" for="option3" checked="checked" name="radio">
+                                  <input type="checkbox" name="options" value="option_3" id="option3">
+                                  <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                        <div class="packagefild">
+                            <div class="packageinner">
+                                <h3 class="monthadd">
+                                    Year
+                                </h3>
+                                <h3 class="monthadd">
+                                  10$
+                              </h3>
+                                <input id="price" type="text" class="form-control priceadd" name="price" placeholder="$1200">
+                                <label class="custoumradio" for="option4" checked="checked" name="radio">
+                                  <input type="checkbox" name="options" value="option_4" id="option4">
+                                  <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+
+
+                      </div>
+                      
+
+
+                     
+
+
+                  
+
+<div class="peronalsave d-flex flex-column text-center">
+<a href="speciality_list.html" class="themebtn mb-2">continue</a>
+<a href="#" class="cancelbtn">cancel </a>        
+</div>        
+                     </form>
