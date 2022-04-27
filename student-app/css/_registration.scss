@@ -1,0 +1,74 @@
+img{
+  width: 100%;
+}
+
+.signpage{
+  
+  .selectlogin{
+    padding: 8% 0px 4% 0px;
+  }
+  .centerblock,
+  .maincentalblock{
+    height: 90vh;
+    overflow: auto;
+    background: #fff;
+    box-shadow: -1px -1px 12px -7px rgba(0,0,0,0.35);
+    padding: 20px 32px 20px 32px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    // background-image: url('/images/coverbg-01.png');
+    .waveimg {
+      position: absolute;
+      top: -48px;
+      left: 0px;
+      z-index: 0;
+  }
+  }
+  .file-upload-input {
+    width: 63%!important;
+  }
+}
+.uploaddocument .file-upload-wrapper {
+  position: relative; 
+  margin-bottom: 10px;
+  overflow: auto;
+
+}
+.uploaddocument .file-upload-input {
+  width: 63%;
+  color: #2c2c2c;
+  font-size: 16px;
+  padding: 8px 17px;
+  border: none;
+  background-color:#ededed;
+  float: right;
+}
+.uploaddocument .file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border: none;
+  background-color: transparent;
+  float: left;
+  width: 37%;
+  border: 1px solid #ebebeb;
+}
+.uploaddocument {
+  margin-bottom: 0px;
+}
+.bottombtn{
+  text-align: center;
+  display: block;
+}
+
+h2.addresshead {
+  font-size: 15px;
+  color: #7b7b7b;
+  margin-bottom: 25px;
+}

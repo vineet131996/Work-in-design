@@ -1,0 +1,36 @@
+.notificationhead{
+    .teacherqualification{
+        margin: 5px 0px 10px 0px !important;
+    }
+}
+.notificationcover{
+    
+     
+  
+    .teacher_listinner{
+        align-items: center;
+    
+    .notification_img{
+        width: 20%;
+     img{
+        width: 65px;
+        object-fit: cover;
+        height: 65px;
+        border: 5px solid #eeeeee;
+        border-radius: 50%;
+    }
+}
+.teacher_listtext{
+    width: 80%!important;
+    .titletime{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            font-size: 12px;
+            color: #b0b1b3;
+            font-weight: 500;
+        }
+    }
+}
+    }
+}

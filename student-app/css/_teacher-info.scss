@@ -1,0 +1,180 @@
+.teacher-info {
+    margin-top: 100px;
+}
+
+.Qualificationcover{
+margin-bottom: 20px;
+.teacherqualification{
+    
+   
+  
+   
+    .teacherqualificationinner{
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        border: 1px solid #ebebeb;
+   
+    border-radius: 13px;
+        h4{
+          position: absolute;
+    font-size: 12px!important;
+    top: -8px;
+    left: 20px;
+    display: inline-block;
+    background: white;
+    padding: 0px 8px;
+        }
+    .subjectcover{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+        input[type="checkbox"] {
+            visibility: hidden;
+            margin-right: 5px;
+          }
+          .checkboxOverride {
+           
+            position: relative;
+            width: 30%;
+            display: flex;
+            font-size: 11px;
+        color: #b7bbc0;
+        margin-bottom: 8px;
+        font-weight: 600;
+          }
+    
+          .timinghead{
+            .checkboxOverride {
+           
+            
+                width: 50%;
+             
+              }
+          }
+          .checkboxOverride input[type="checkbox"]:checked + label:after {
+            opacity: 1;
+          }
+          .checkboxOverride label {
+            background: none repeat scroll 0 0 #EEEEEE;
+            border: 1px solid #DDDDDD;
+            cursor: pointer;
+            height: 15px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 15px;
+          }
+          .checkboxOverride label:after {
+              border: 3px solid black;
+            border-style: none none solid solid;
+            content: "";
+            height: 5px;
+            left: 2px;
+            opacity: 0;
+            position: absolute;
+            top: 4px;
+            -webkit-transform: rotate(
+        -45deg
+        );
+            transform: rotate(
+        -45deg
+        );
+            width: 9px;
+          }
+    
+    
+    
+    
+        h4{
+            font-size: 15px;
+            color: #7b7b7b;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+    
+        }
+        p{
+            font-size: 13px;
+            color: #b7bbc0;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+    }
+    .availability{
+        ul{
+        justify-content: space-between;
+        margin-top: 10px;
+        @include flexulproperties;
+        li{
+          
+            a{
+                border: 1px solid #b7bbc0;
+                width: 40px;
+                height: 40px;
+               font-size: 13px;
+               color: #b7bbc0;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #5fe2ca;
+                    color: #fff;
+                    transition: all 0.5s;
+                }
+            }
+    
+    
+        }
+    }
+    }
+    }
+}
+.col-ting{
+  display: flex;
+
+.file-upload {
+  width: 100%;
+	.image-box {
+		height: 8em;
+  
+    width: 100%;
+    background: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0px 5px;
+		
+		img {
+			height: 100%;
+			display: none;
+      object-fit: cover;
+		}
+		
+		p {
+		
+    color: #b7bbc0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color: #b7bbc0;
+    display: flex;
+    flex-direction: column;
+    
+    i.fa.fa-cloud-upload {
+      font-size: 50px;
+      
+    color: $backgroundtheamcol;
+  }
+		}
+	}
+}
+}
+
+  div#genderone {
+    margin-bottom: 25px;
+}

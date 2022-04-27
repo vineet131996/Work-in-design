@@ -1,0 +1,161 @@
+
+.chooseforlogin {
+   
+    margin: 120px 50px 20px 50px ;
+
+.loginchoosecover{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    .titlemain{
+        color: $backgroundtheamcol;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+   
+        .leftpartloginimg {
+            width: 85px;
+            padding: 5px;
+            border: 1px solid $backgroundtheamcol;
+            border-radius: 50%;
+            position: relative;
+        }
+}
+.custumradiobtn
+{
+   
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+
+
+     input[type=radio]:checked + label:before {
+        animation: on-bord-battun .3s ease-in-out;
+    }
+    @keyframes on-bord-battun {
+        0% { /*box-shadow: 0px 0px 0px 12px rgba(255,255,255,0);*/
+             transform: scale(1);}
+        50% { box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.7);
+            transform: scale(0.4);}
+        100% { box-shadow: 0px 0px 0px 12px rgba(255,255,255,0);
+             transform: scale(1);}
+    }
+     input[type="radio"]:not(:checked) + label:before {
+        animation: off-bord-battun .3s ease-in-out;
+    }
+    @keyframes off-bord-battun {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.4); }
+        100% { transform: scale(1); }
+    }
+    input[type=radio]:checked + label:after {
+        opacity: 1;
+        animation: on-dot .3s ease-in-out;
+    }
+    @keyframes on-dot {
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+    }
+    input[type=radio]:not(:checked) + label:after {
+        animation: off-dot .3s ease-in-out;
+    }
+    @keyframes off-dot { 
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+
+
+    input[type=radio] {
+        display: none;
+    }
+    label{
+        &:before,
+        &:after{
+            content: "";
+            position: absolute;
+            border-radius: 50%; 
+        }
+        &:before {
+            width: 25px;
+            height: 25px;
+            border: 3px solid #fff;
+            top: -5px;
+            left: 0px;
+            background-color: $backgroundtheamcol;
+        }
+        &:after {
+            width: 11px;
+            height: 11px;
+            background-color: #fc5185;
+            top: 2px;
+            left: 7px;
+            opacity: 0;
+        }
+} 
+
+
+}
+
+}
+
+
+
+.notamember{
+    margin-top: 20px;
+    p{
+        font-size: 11px;
+        color: gray;
+        font-weight: 500;
+        a{
+            font-size: 13px;
+            font-weight: 600;
+            color: $backgroundtheamcol;
+        }
+    }
+
+}
+
+.loginsocialmediaicon{
+    ul{
+        @include flexulproperties;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            width: 33.33%;
+            a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            i{
+                width: 26px;
+    height: 26px;
+  
+    display: flex;
+   
+    justify-content: center;
+  
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid $backgroundtheamcol;
+    color: $backgroundtheamcol;
+    transition: all 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.5s;
+        background-color: $backgroundtheamcol;
+        color: $white-text;
+    }
+}
+            span {
+                font-size: 11px;
+                color: $backgroundtheamcol;
+                font-weight: 500;
+            }
+        }
+    }
+    }
+}

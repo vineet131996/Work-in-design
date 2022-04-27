@@ -1,0 +1,367 @@
+$backgroundtheamcol:#33a1a0;
+
+// #8cbbf1
+// #21c392
+
+
+$white-text:white;
+@mixin flexulproperties {
+  display: flex;
+list-style-type: none;
+padding-left: 0px;
+margin-bottom: 0px!important;
+}
+
+.signpage{
+  height: 100vh;
+  background-color: $backgroundtheamcol;
+}
+.mainsizesection {
+    max-width: 430px;
+        width: 100%;
+        margin: auto;
+        background-color: #ffffff !important;
+        border: solid 1px $backgroundtheamcol;
+        height: 100vh;
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+}
+
+.mainsizesection:after {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: 0.7s all;
+    opacity: 0;
+    visibility: hidden;
+}
+body.sidemenuopen .mainsizesection:after {
+    opacity: 1;
+    visibility: visible;
+}
+:focus-visible {
+    outline: none;
+}
+.contentblock {
+    padding: 15px;
+    height: 100%;
+}
+.themebtn {
+    background: $backgroundtheamcol;
+    padding: 11px 39px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color:$white-text;
+    display: block;
+    border: 1px solid $backgroundtheamcol;
+    transition: all 0.5s;
+    &:hover{
+        color: $backgroundtheamcol;
+        background-color: $white-text;
+        transition: all 0.5s;
+    }
+}
+.cancelbtn{
+    background: #5c5c5c;
+    padding: 11px 39px;
+    border-radius: 50px;
+    font-size: 14px;
+    color:$white-text;
+    display: inline-block;
+    &:hover{
+        color: $white-text;
+    }
+}
+.inputmain {
+    position: relative;
+    margin-bottom: 20px;
+    span {
+      position: absolute;
+      top: -11px;
+      left: 20px;
+      display: inline-block;
+      background: white;
+      padding: 0px 8px;
+      font-size: 12px;
+      text-transform: capitalize;
+      color: #858689;
+      font-weight: 500;
+  }
+    img{
+      position: absolute;
+      width: 35px;
+      background-color: #f2f0f566;
+      padding: 3px;
+      z-index: 9;
+      border-radius: 50%;
+      right: 5px;
+      top: 50%;
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      border: 1px solid #e6e6e6;
+    }
+    input{
+      padding-left: 20px;
+        border-radius: 50px;
+        height: 40px;
+        border-color: #ebebeb;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+.centerblock {
+    padding: 0 30px;
+    form{
+        margin-bottom:50px;
+    }
+}
+
+.titlemain {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50px;
+      margin-right: 5px;
+  }
+    
+    span{
+        display: block;
+    }
+}
+.inputmain textarea{
+    border-radius: 15px;
+    height: auto;
+    border-color: #dfd4d7;
+    font-size: 14px;
+    width: 100%;
+    padding: 13px;
+    color: #495057;
+}
+
+
+
+
+  
+.shorttitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555555;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.prytext{
+    font-size: 14px;
+    color: #757575;
+  }
+
+//   custoumradio btn
+
+
+
+.innertitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: $backgroundtheamcol;
+    margin-bottom: 23px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ededed;
+}
+.scrollbar{
+  width: 5px;
+  background-color: $backgroundtheamcol;
+
+}
+body {
+    background: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 30px auto;
+  }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    transform: translateX(-15px);
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+//   .avatar-upload .avatar-edit input + label:after {
+//     content: "";
+//     font-family: 'FontAwesome';
+//     color: #757575;
+//     position: absolute;
+//     top: 10px;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     margin: auto;
+//   }
+  .avatar-upload .avatar-preview {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: auto;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  img.camera-img {
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+  .wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    h2{
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #858689;
+        font-weight: 500;
+        margin-bottom: 0px!important;
+      margin-right: 16px;
+    }
+  
+   .option {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px 0px;
+    font-size: 11px;
+    border: 2px solid #d9d9d9;
+    font-weight: 500;
+    text-transform: capitalize;
+  
+
+   .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    position: relative;
+    border-radius: 50%;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #fc5185;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+  }
+}
+}
+input[type="radio"] {
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #optionone:checked:checked ~ .optionone,
+  #option-2:checked:checked ~ .option-2,
+  #optiontwo:checked:checked ~ .optiontwo,
+  #option-3:checked:checked ~ .option-3 {
+    border-color: $backgroundtheamcol;
+    background: $backgroundtheamcol;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot,
+  #option-3:checked:checked ~ .option-3 .dot,
+  #optionone:checked:checked ~ .option-one .dot,
+  #optiontwo:checked:checked ~ .option-two .dot {
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before,
+  #option-3:checked:checked ~ .option-3 .dot::before,
+  #optionone:checked:checked ~ .optionone .dot::before,
+  #optiontwo:checked:checked ~ .optiontwo .dot::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span {
+    font-size: 20px;
+    columns: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span,
+  #option-3:checked:checked ~ .option-3 span,
+  #optionone:checked:checked ~ .optionone span,
+  #optiontwo:checked:checked ~ .optiontwo span {
+    color: #fff;
+  }
+  
+  }
+  
+
+  .signpage{
+      background-image: url('/images/bg-cover.png');
+      background-image: url(/images/bg-cover.png);
+    background-position: top;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }

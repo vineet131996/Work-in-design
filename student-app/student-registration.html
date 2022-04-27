@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Student Registration</title>
+</head>
+
+<body>
+  <div class="mainsizesection">
+    <div class="fullbgblock signpage">
+      <div class="selectlogin">
+
+       
+          <div class="centerblock ">
+            <img class="waveimg" src="images/student-bg.png" alt="">
+            <div class="centerblockinner">
+            <h1 class="titlemain"> <span>Student </span>
+              Registration</h1>
+            </div>
+            <div class="student-profile">
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                  <label for="imageUpload" class="profileclick">
+                    <img class="camera-img" src="images/profile-click.png" alt="">
+                  </label>
+                </div>
+                <div class="avatar-preview">
+                  <div id="imagePreview" style="background-image:url('images/pselect-profile.png');">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form>
+              <div class="inputmain ">
+
+                <img src="images/user-icon.svg">
+                <span>full name</span>
+                <input id="firstname" type="text" class="form-control" name="fullname" placeholder="">
+              </div>
+              <div class="inputmain">
+                <img src="images/user-icon.svg">
+                <span>User Name</span>
+                <input id="username" type="text" class="form-control" name="username" placeholder="">
+              </div>
+              <div class="inputmain">
+                <img src="images/book.svg">
+                <span>Enter Grade</span>
+                <input id="entergrade" type="text" class="form-control" name="Email" placeholder="">
+              </div>
+              <div class="inputmain">
+                <img src="images/school.svg">
+                <span>Enter School</span>
+                <input id="enterschool" type="text" class="form-control" name="Email" placeholder="">
+              </div>
+              <div class="inputmain">
+
+                <img src="images/clock.svg">
+                <span>Preferred Timing</span>
+                <input id="preferredtime" type="text" class="form-control" name="preferredtime" placeholder="">
+              </div>
+              <div class="inputmain">
+                <img src="images/email.svg">
+                <span>Email</span>
+                <input id="Email" type="text" class="form-control" name="Email" placeholder="">
+              </div>
+
+              <div class="inputmain">
+                <img src="images/changepass.svg">
+                <span>Password</span>
+                <input id="Password" type="password" class="form-control" name="Password" placeholder="">
+              </div>
+
+              <div class="inputmain">
+                <img src="images/phone-icon.svg">
+                <span>Phone Number</span>
+                <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+              </div>
+              <div class="inputmain">
+                <img src="images/phone-icon.svg">
+                <span> Parents Phone Number</span>
+                <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+              </div>
+         
+            
+                <h2 class="addresshead">Address:</h2>
+           
+                <div class="inputmain">
+                  <img src="images/street.svg">
+                  <span>Street</span>
+                  <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+                </div>
+                <div class="inputmain">
+                  <img src="images/landmark.svg">
+                  <span>Land Mark</span>
+                  <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+                </div>
+                <div class="inputmain">
+                  <img src="images/city.svg">
+                  <span>City</span>
+                  <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+                </div>
+                <div class="inputmain">
+                  <img src="images/school.svg">
+                  <span>State</span>
+                  <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+                </div>
+                <div class="inputmain">
+                  <img src="images/zipcode.svg">
+                  <span>Zip Code</span>
+                  <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+                </div>
+
+
+
+
+              <div class="wrapper">
+                <h2>Gender:</h2>
+                <input type="radio" name="select" id="option-1" checked>
+                <input type="radio" name="select" id="option-2">
+                <label for="option-1" class="option option-1">
+                  <div class="dot"></div>
+                  <span>male</span>
+                </label>
+                <label for="option-2" class="option option-2">
+                  <div class="dot"></div>
+                  <span>female</span>
+                </label>
+              </div>
+
+
+
+
+
+            </form>
+            <div class="bottombtn"><a href="login.html" class="themebtn">Sign Up</a></div>
+          </div>
+        
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      $("#imageUpload").change(function () {
+        readURL(this);
+      });
+    </script>
+
+</body>
+
+</html>

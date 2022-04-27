@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Teacher Registration</title>
+</head>
+
+<body>
+  <div class="mainsizesection">
+    <div class="fullbgblock signpage">
+      <div class="selectlogin">
+
+
+        <div class="centerblock ">
+          <img class="waveimg" src="images/student-bg.png" alt="">
+          <h1 class="titlemain"> <span> Teacher </span> Registration</h1>
+          <div class="student-profile">
+            <div class="avatar-upload">
+              <div class="avatar-edit">
+                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                <label for="imageUpload" class="profileclick">
+                  <img class="camera-img" src="images/profile-click.png" alt="">
+                </label>
+              </div>
+              <div class="avatar-preview">
+                <div id="imagePreview" style="background-image: url('images/pselect-profile.png');">
+                </div>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="inputmain ">
+
+              <img src="images/user-icon.svg">
+              <span>full name</span>
+              <input id="firstname" type="text" class="form-control" name="fullname" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/user-icon.svg">
+              <span>User Name</span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="">
+            </div>
+
+            <div class="inputmain">
+              <img src="images/email.svg">
+              <span>Email</span>
+              <input id="Email" type="text" class="form-control" name="Email" placeholder="">
+            </div>
+
+            <div class="inputmain">
+              <img src="images/changepass.svg">
+              <span>Password</span>
+              <input id="Password" type="password" class="form-control" name="Password" placeholder="">
+            </div>
+
+            <div class="inputmain">
+              <img src="images/phone-icon.svg">
+              <span>Phone Number</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+           
+
+            <h2 class="addresshead">Qualification Details</h2>
+            <div class="inputmain">
+              <img src="images/qualification.svg">
+              <span>Qualification</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/school.svg">
+              <span>Institute</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/educatioboard.svg">
+              <span>Board</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+
+
+            <h2 class="addresshead">Experience</h2>
+            <div class="inputmain">
+              <img src="images/Birth_of_ Date.svg">
+              <span>Period</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/school.svg">
+              <span>Organization & Address</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/experiance.svg">
+              <span>Designation</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+            <div class="inputmain">
+              <img src="images/history.svg">
+              <span>Employment History</span>
+              <input id="phonenumber" type="text" class="form-control" name="phonenumber" placeholder="">
+            </div>
+           
+            <div class="wrapper">
+              <h2>Gender:</h2>
+              <input type="radio" name="select" id="option-1" checked="">
+              <input type="radio" name="select" id="option-2">
+              <label for="option-1" class="option option-1">
+                <div class="dot"></div>
+                <span>male</span>
+              </label>
+              <label for="option-2" class="option option-2">
+                <div class="dot"></div>
+                <span>female</span>
+              </label>
+            </div>
+
+
+
+
+
+          </form>
+          <div class="bottombtn"><a href="login.html" class="themebtn">Sign Up</a></div>
+        </div>
+
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script>
+         $(document).ready(function(){
+         	$("input[name='options']").click(function(){
+         		
+         		var value = $( this ).val();
+         
+                         //Remove the class option-checked
+         		$( ".option-checked" ).removeClass( "option-checked" );
+         		
+         		switch( value ) {
+         			case 'option_1':
+         					$( ".first-option" ).addClass( "option-checked" );
+         				break;
+         			case 'option_2':
+         					$( ".second-option" ).addClass( "option-checked" );
+         				break;
+         		}
+         		
+         	});
+         });
+      </script>
+     -->
+    <script>
+
+
+      (function ($) {
+
+        var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+          isIE = /msie/i.test(navigator.userAgent);
+
+        $.fn.customFile = function () {
+
+          return this.each(function () {
+
+            var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
+              $wrap = $('<div class="file-upload-wrapper">'),
+              $input = $('<input type="text" class="file-upload-input" />'),
+              // Button that will be used in non-IE browsers
+              $button = $('<button type="button" class="file-upload-button">Upload File</button>'),
+              // Hack for IE
+              $label = $('<label class="file-upload-button" for="' + $file[0].id + '">Upload File</label>');
+
+            // Hide by shifting to the left so we
+            // can still trigger events
+            $file.css({
+              position: 'absolute',
+              left: '-9999px'
+            });
+
+            $wrap.insertAfter($file)
+              .append($file, $input, (isIE ? $label : $button));
+
+            // Prevent focus
+            $file.attr('tabIndex', -1);
+            $button.attr('tabIndex', -1);
+
+            $button.click(function () {
+              $file.focus().click(); // Open dialog
+            });
+
+            $file.change(function () {
+
+              var files = [], fileArr, filename;
+
+              // If multiple is supported then extract
+              // all filenames from the file array
+              if (multipleSupport) {
+                fileArr = $file[0].files;
+                for (var i = 0, len = fileArr.length; i < len; i++) {
+                  files.push(fileArr[i].name);
+                }
+                filename = files.join(', ');
+
+                // If not supported then just take the value
+                // and remove the path to just show the filename
+              } else {
+                filename = $file.val().split('\\').pop();
+              }
+
+              $input.val(filename) // Set the value
+                .attr('title', filename) // Show filename in title tootlip
+                .focus(); // Regain focus
+
+            });
+
+            $input.on({
+              blur: function () { $file.trigger('blur'); },
+              keydown: function (e) {
+                if (e.which === 13) { // Enter
+                  if (!isIE) { $file.trigger('click'); }
+                } else if (e.which === 8 || e.which === 46) { // Backspace & Del
+                  // On some browsers the value is read-only
+                  // with this trick we remove the old input and add
+                  // a clean clone with all the original events attached
+                  $file.replaceWith($file = $file.clone(true));
+                  $file.trigger('change');
+                  $input.val('');
+                } else if (e.which === 9) { // TAB
+                  return;
+                } else { // All other keys
+                  return false;
+                }
+              }
+            });
+
+          });
+
+        };
+
+        // Old browser fallback
+        if (!multipleSupport) {
+          $(document).on('change', 'input.customfile', function () {
+
+            var $this = $(this),
+              // Create a unique ID so we
+              // can attach the label to the input
+              uniqId = 'customfile_' + (new Date()).getTime(),
+              $wrap = $this.parent(),
+
+              // Filter empty input
+              $inputs = $wrap.siblings().find('.file-upload-input')
+                .filter(function () { return !this.value }),
+
+              $file = $('<input type="file" id="' + uniqId + '" name="' + $this.attr('name') + '"/>');
+
+            // 1ms timeout so it runs after all other events
+            // that modify the value have triggered
+            setTimeout(function () {
+              // Add a new input
+              if ($this.val()) {
+                // Check for empty fields to prevent
+                // creating new inputs when changing files
+                if (!$inputs.length) {
+                  $wrap.after($file);
+                  $file.customFile();
+                }
+                // Remove and reorganize inputs
+              } else {
+                $inputs.parent().remove();
+                // Move the input so it's always last on the list
+                $wrap.appendTo($wrap.parent());
+                $wrap.find('input').focus();
+              }
+            }, 1);
+
+          });
+        }
+
+      }(jQuery));
+
+      $('.uploaddoc').customFile();
+    </script>
+
+</body>
+
+</html>

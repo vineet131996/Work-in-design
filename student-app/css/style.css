@@ -1,0 +1,1764 @@
+.signpage {
+  height: 100vh;
+  background-color: #33a1a0;
+}
+
+.mainsizesection {
+  max-width: 430px;
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff !important;
+  border: solid 1px #33a1a0;
+  height: 100vh;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainsizesection:after {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.sidemenuopen .mainsizesection:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.contentblock {
+  padding: 15px;
+  height: 100%;
+}
+
+.themebtn {
+  background: #33a1a0;
+  padding: 11px 39px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  display: block;
+  border: 1px solid #33a1a0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.themebtn:hover {
+  color: #33a1a0;
+  background-color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cancelbtn {
+  background: #5c5c5c;
+  padding: 11px 39px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+}
+
+.cancelbtn:hover {
+  color: white;
+}
+
+.inputmain {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputmain span {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  display: inline-block;
+  background: white;
+  padding: 0px 8px;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #858689;
+  font-weight: 500;
+}
+
+.inputmain img {
+  position: absolute;
+  width: 35px;
+  background-color: #f2f0f566;
+  padding: 3px;
+  z-index: 9;
+  border-radius: 50%;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  border: 1px solid #e6e6e6;
+}
+
+.inputmain input {
+  padding-left: 20px;
+  border-radius: 50px;
+  height: 40px;
+  border-color: #ebebeb;
+  font-size: 14px;
+  width: 100%;
+}
+
+.centerblock {
+  padding: 0 30px;
+}
+
+.centerblock form {
+  margin-bottom: 50px;
+}
+
+.titlemain {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titlemain img {
+  width: 50px;
+  margin-right: 5px;
+}
+
+.titlemain span {
+  display: block;
+}
+
+.inputmain textarea {
+  border-radius: 15px;
+  height: auto;
+  border-color: #dfd4d7;
+  font-size: 14px;
+  width: 100%;
+  padding: 13px;
+  color: #495057;
+}
+
+.shorttitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #555555;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.prytext {
+  font-size: 14px;
+  color: #757575;
+}
+
+.innertitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #33a1a0;
+  margin-bottom: 23px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #ededed;
+}
+
+.scrollbar {
+  width: 5px;
+  background-color: #33a1a0;
+}
+
+body {
+  background: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 30px auto;
+}
+
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-preview {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: auto;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+img.camera-img {
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper h2 {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #858689;
+  font-weight: 500;
+  margin-bottom: 0px !important;
+  margin-right: 16px;
+}
+
+.wrapper .option {
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 5px 0px;
+  font-size: 11px;
+  border: 2px solid #d9d9d9;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.wrapper .option .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  position: relative;
+  border-radius: 50%;
+}
+
+.wrapper .option .dot::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #fc5185;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper input[type="radio"] {
+  display: none;
+}
+
+.wrapper #option-1:checked:checked ~ .option-1,
+.wrapper #optionone:checked:checked ~ .optionone,
+.wrapper #option-2:checked:checked ~ .option-2,
+.wrapper #optiontwo:checked:checked ~ .optiontwo,
+.wrapper #option-3:checked:checked ~ .option-3 {
+  border-color: #33a1a0;
+  background: #33a1a0;
+}
+
+.wrapper #option-1:checked:checked ~ .option-1 .dot,
+.wrapper #option-2:checked:checked ~ .option-2 .dot,
+.wrapper #option-3:checked:checked ~ .option-3 .dot,
+.wrapper #optionone:checked:checked ~ .option-one .dot,
+.wrapper #optiontwo:checked:checked ~ .option-two .dot {
+  background: #fff;
+}
+
+.wrapper #option-1:checked:checked ~ .option-1 .dot::before,
+.wrapper #option-2:checked:checked ~ .option-2 .dot::before,
+.wrapper #option-3:checked:checked ~ .option-3 .dot::before,
+.wrapper #optionone:checked:checked ~ .optionone .dot::before,
+.wrapper #optiontwo:checked:checked ~ .optiontwo .dot::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wrapper .wrapper .option span {
+  font-size: 20px;
+  -webkit-columns: #808080;
+          columns: #808080;
+}
+
+.wrapper #option-1:checked:checked ~ .option-1 span,
+.wrapper #option-2:checked:checked ~ .option-2 span,
+.wrapper #option-3:checked:checked ~ .option-3 span,
+.wrapper #optionone:checked:checked ~ .optionone span,
+.wrapper #optiontwo:checked:checked ~ .optiontwo span {
+  color: #fff;
+}
+
+.signpage {
+  background-image: url("/images/bg-cover.png");
+  background-image: url(/images/bg-cover.png);
+  background-position: top;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.signpage .selectlogin {
+  padding: 8% 0px 4% 0px;
+}
+
+.signpage .centerblock,
+.signpage .maincentalblock {
+  height: 90vh;
+  overflow: auto;
+  background: #fff;
+  -webkit-box-shadow: -1px -1px 12px -7px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px -1px 12px -7px rgba(0, 0, 0, 0.35);
+  padding: 20px 32px 20px 32px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.signpage .centerblock .waveimg,
+.signpage .maincentalblock .waveimg {
+  position: absolute;
+  top: -48px;
+  left: 0px;
+  z-index: 0;
+}
+
+.signpage .file-upload-input {
+  width: 63% !important;
+}
+
+.uploaddocument .file-upload-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+.uploaddocument .file-upload-input {
+  width: 63%;
+  color: #2c2c2c;
+  font-size: 16px;
+  padding: 8px 17px;
+  border: none;
+  background-color: #ededed;
+  float: right;
+}
+
+.uploaddocument .file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border: none;
+  background-color: transparent;
+  float: left;
+  width: 37%;
+  border: 1px solid #ebebeb;
+}
+
+.uploaddocument {
+  margin-bottom: 0px;
+}
+
+.bottombtn {
+  text-align: center;
+  display: block;
+}
+
+h2.addresshead {
+  font-size: 15px;
+  color: #7b7b7b;
+  margin-bottom: 25px;
+}
+
+.chooseforlogin {
+  margin: 120px 50px 20px 50px;
+}
+
+.chooseforlogin .loginchoosecover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chooseforlogin .loginchoosecover .titlemain {
+  color: #33a1a0;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.chooseforlogin .loginchoosecover .leftpartloginimg {
+  width: 85px;
+  padding: 5px;
+  border: 1px solid #33a1a0;
+  border-radius: 50%;
+  position: relative;
+}
+
+.chooseforlogin .custumradiobtn {
+  position: absolute;
+  left: 35%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.chooseforlogin .custumradiobtn input[type=radio]:checked + label:before {
+  -webkit-animation: on-bord-battun .3s ease-in-out;
+          animation: on-bord-battun .3s ease-in-out;
+}
+
+@-webkit-keyframes on-bord-battun {
+  0% {
+    /*box-shadow: 0px 0px 0px 12px rgba(255,255,255,0);*/
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.7);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes on-bord-battun {
+  0% {
+    /*box-shadow: 0px 0px 0px 12px rgba(255,255,255,0);*/
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.7);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.chooseforlogin .custumradiobtn input[type="radio"]:not(:checked) + label:before {
+  -webkit-animation: off-bord-battun .3s ease-in-out;
+          animation: off-bord-battun .3s ease-in-out;
+}
+
+@-webkit-keyframes off-bord-battun {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes off-bord-battun {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.chooseforlogin .custumradiobtn input[type=radio]:checked + label:after {
+  opacity: 1;
+  -webkit-animation: on-dot .3s ease-in-out;
+          animation: on-dot .3s ease-in-out;
+}
+
+@-webkit-keyframes on-dot {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes on-dot {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.chooseforlogin .custumradiobtn input[type=radio]:not(:checked) + label:after {
+  -webkit-animation: off-dot .3s ease-in-out;
+          animation: off-dot .3s ease-in-out;
+}
+
+@-webkit-keyframes off-dot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes off-dot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.chooseforlogin .custumradiobtn input[type=radio] {
+  display: none;
+}
+
+.chooseforlogin .custumradiobtn label:before, .chooseforlogin .custumradiobtn label:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.chooseforlogin .custumradiobtn label:before {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #fff;
+  top: -5px;
+  left: 0px;
+  background-color: #33a1a0;
+}
+
+.chooseforlogin .custumradiobtn label:after {
+  width: 11px;
+  height: 11px;
+  background-color: #fc5185;
+  top: 2px;
+  left: 7px;
+  opacity: 0;
+}
+
+.notamember {
+  margin-top: 20px;
+}
+
+.notamember p {
+  font-size: 11px;
+  color: gray;
+  font-weight: 500;
+}
+
+.notamember p a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #33a1a0;
+}
+
+.loginsocialmediaicon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.loginsocialmediaicon ul li {
+  width: 33.33%;
+}
+
+.loginsocialmediaicon ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginsocialmediaicon ul li a i {
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #33a1a0;
+  color: #33a1a0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.loginsocialmediaicon ul li a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #33a1a0;
+  color: white;
+}
+
+.loginsocialmediaicon ul li a span {
+  font-size: 11px;
+  color: #33a1a0;
+  font-weight: 500;
+}
+
+.teacher-listhead .teacherqualification {
+  margin: 5px 0px 25px 0px !important;
+}
+
+.maincentalblock {
+  padding: 0px 0px 0px !important;
+  background-color: #fefefe !important;
+}
+
+.maincentalblock .topheadnav {
+  text-align: left;
+  background-color: #33a1a0;
+  -webkit-box-shadow: 0px 9px 14px -7px rgba(0, 0, 0, 0.62);
+          box-shadow: 0px 9px 14px -7px rgba(0, 0, 0, 0.62);
+  min-height: 100px;
+  border-radius: 0px 0px 25px 25px;
+  padding: 20px;
+}
+
+.maincentalblock .topheadnav span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #dccfcf;
+}
+
+.maincentalblock .topheadnav span a i {
+  font-size: 18px !important;
+  margin-right: 5px;
+}
+
+.maincentalblock .topheadnav .topheadnavinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maincentalblock .topheadnav .topheadnavinner h5 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner {
+  position: relative;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner i {
+  color: black;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner .nav-icon {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner .fa-search {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner input {
+  width: 35px;
+  height: 35px;
+  padding: 0px !important;
+  border-radius: 50%;
+  right: 0px;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+  border: 0px;
+}
+
+.maincentalblock .topheadnav .topheadnavinner .searchbtncover .searchbtninner input:focus {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext {
+  padding: 5px 8px !important;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listimg {
+  width: 25%;
+  margin-top: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listimg img {
+  width: 80px;
+  height: 85px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext {
+  width: 80%;
+  padding-left: 10px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .rating_star span {
+  font-size: 14px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .rating_star h6 {
+  font-size: 13px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .rating_star a {
+  font-size: 13px;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .viewprofileviewcover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .viewprofileviewcover .viewprofileview {
+  padding: 5px 10px;
+  background: #33a1a0;
+  color: #fffcff;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #33a1a0;
+}
+
+.maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .viewprofileviewcover .viewprofileview:hover {
+  color: #33a1a0;
+  background-color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.maincentalblock {
+  background: #fefefe !important;
+}
+
+.maincentalblock .teacher-profilecover {
+  padding: 30px 20px;
+  text-align: left !important;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext {
+  width: 65%;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext h3 {
+  font-size: 18px;
+  color: #7b7b7b;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext h5 {
+  font-size: 13px;
+  color: #b7bbc0;
+  margin-bottom: 10px;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext .socialmediaicon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext .socialmediaicon ul li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border: 1px solid #33a1a0;
+  color: #33a1a0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext .socialmediaicon ul li a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #33a1a0;
+  color: white;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profileimg {
+  width: 35%;
+}
+
+.maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profileimg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification {
+  margin: 15px 0px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 29px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 29px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ededed;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext {
+  padding: 10px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .subjectcover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext input[type="checkbox"] {
+  visibility: hidden;
+  margin-right: 5px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .checkboxOverride {
+  position: relative;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #b7bbc0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .timinghead .checkboxOverride {
+  width: 50%;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .checkboxOverride input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .checkboxOverride label {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border: 1px solid #DDDDDD;
+  cursor: pointer;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext .checkboxOverride label:after {
+  border: 3px solid black;
+  border-style: none none solid solid;
+  content: "";
+  height: 5px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 9px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext h4 {
+  font-size: 15px;
+  color: #7b7b7b;
+  margin-bottom: 5px;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .qualificationtext p {
+  font-size: 13px;
+  color: #b7bbc0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .availability ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .availability ul li a {
+  border: 1px solid #b7bbc0;
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  color: #b7bbc0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.maincentalblock .teacher-profilecover .teacherqualification .availability ul li a:hover {
+  background-color: #5fe2ca;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.maincentalblock .rating_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.maincentalblock .rating_star h6 {
+  margin-bottom: 0px !important;
+  font-size: 14px;
+  margin-left: 5px;
+  color: #7b7b7b;
+}
+
+.maincentalblock .rating_star span {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #bec4c6;
+}
+
+.maincentalblock .rating_star .fa-star {
+  color: orange;
+}
+
+.maincentalblock .rating_star ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+}
+
+.maincentalblock .rating_star ul li {
+  padding: 2px;
+  line-height: 0px;
+}
+
+.maincentalblock .rating_star ul li a {
+  font-size: 16px;
+}
+
+.notificationhead .teacherqualification {
+  margin: 5px 0px 10px 0px !important;
+}
+
+.notificationcover .teacher_listinner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notificationcover .teacher_listinner .notification_img {
+  width: 20%;
+}
+
+.notificationcover .teacher_listinner .notification_img img {
+  width: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 65px;
+  border: 5px solid #eeeeee;
+  border-radius: 50%;
+}
+
+.notificationcover .teacher_listinner .teacher_listtext {
+  width: 80% !important;
+}
+
+.notificationcover .teacher_listinner .teacher_listtext .titletime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notificationcover .teacher_listinner .teacher_listtext .titletime h3 {
+  font-size: 12px;
+  color: #b0b1b3;
+  font-weight: 500;
+}
+
+.homescreencover {
+  margin: 150px 0px 0px 0px;
+}
+
+.homescreencover .teachortutor {
+  margin: 40px 0px 40px 0px;
+}
+
+.homescreencover .teachortutor .profile-text {
+  margin-top: 25px;
+}
+
+.homescreencover .teachortutor .profile-text h2 {
+  font-size: 13px;
+  color: #33a1a0;
+}
+
+.homescreencover .teachortutor .profile-teacher {
+  border-radius: 50%;
+  -webkit-animation: ripple 1s linear infinite;
+          animation: ripple 1s linear infinite;
+  display: inline-block;
+  position: relative;
+}
+
+.homescreencover .teachortutor .profile-teacher:hover::after {
+  opacity: 13%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.homescreencover .teachortutor .profile-teacher::after {
+  position: absolute;
+  content: "";
+  background: #33a1a0;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 50%;
+  opacity: 0%;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(51, 161, 160, 0.1), 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1);
+            box-shadow: 0 0 0 0 rgba(51, 161, 160, 0.1), 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1), 0 0 0 40px rgba(51, 161, 160, 0);
+            box-shadow: 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1), 0 0 0 40px rgba(51, 161, 160, 0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(51, 161, 160, 0.1), 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1);
+            box-shadow: 0 0 0 0 rgba(51, 161, 160, 0.1), 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1), 0 0 0 40px rgba(51, 161, 160, 0);
+            box-shadow: 0 0 0 5px rgba(51, 161, 160, 0.1), 0 0 0 15px rgba(51, 161, 160, 0.1), 0 0 0 25px rgba(51, 161, 160, 0.1), 0 0 0 40px rgba(51, 161, 160, 0);
+  }
+}
+
+.homescreencover .teachortutor .profile-teacher img {
+  width: 95px;
+  height: 95px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #33a1a0;
+  border-radius: 50%;
+}
+
+.homescreencover .teachortutor .custumradiobtn.openon {
+  top: 100% !important;
+}
+
+.teacher-info {
+  margin-top: 100px;
+}
+
+.Qualificationcover {
+  margin-bottom: 20px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner {
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #ebebeb;
+  border-radius: 13px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner h4 {
+  position: absolute;
+  font-size: 12px !important;
+  top: -8px;
+  left: 20px;
+  display: inline-block;
+  background: white;
+  padding: 0px 8px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .subjectcover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner input[type="checkbox"] {
+  visibility: hidden;
+  margin-right: 5px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .checkboxOverride {
+  position: relative;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #b7bbc0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .timinghead .checkboxOverride {
+  width: 50%;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .checkboxOverride input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .checkboxOverride label {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border: 1px solid #DDDDDD;
+  cursor: pointer;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner .checkboxOverride label:after {
+  border: 3px solid black;
+  border-style: none none solid solid;
+  content: "";
+  height: 5px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 9px;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner h4 {
+  font-size: 15px;
+  color: #7b7b7b;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.Qualificationcover .teacherqualification .teacherqualificationinner p {
+  font-size: 13px;
+  color: #b7bbc0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.Qualificationcover .teacherqualification .availability ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px !important;
+}
+
+.Qualificationcover .teacherqualification .availability ul li a {
+  border: 1px solid #b7bbc0;
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  color: #b7bbc0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Qualificationcover .teacherqualification .availability ul li a:hover {
+  background-color: #5fe2ca;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.col-ting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-ting .file-upload {
+  width: 100%;
+}
+
+.col-ting .file-upload .image-box {
+  height: 8em;
+  width: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0px 5px;
+}
+
+.col-ting .file-upload .image-box img {
+  height: 100%;
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.col-ting .file-upload .image-box p {
+  color: #b7bbc0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 11px;
+  color: #b7bbc0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-ting .file-upload .image-box p i.fa.fa-cloud-upload {
+  font-size: 50px;
+  color: #33a1a0;
+}
+
+div#genderone {
+  margin-bottom: 25px;
+}
+
+.teacher-info.teachercategories .categoriescenter {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #33a1a0;
+}
+
+.categoriescenter {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #33a1a0;
+}
+
+.teachingmodecover .teachingmodeinner {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.teachingmodecover .teachingmodeinner p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teachingmodecover [type="radio"]:checked,
+.teachingmodecover [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.teachingmodecover [type="radio"]:checked + label,
+.teachingmodecover [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  font-size: 14px;
+  color: #b7bbc0;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.teachingmodecover [type="radio"]:checked + label:before,
+.teachingmodecover [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.teachingmodecover [type="radio"]:checked + label:after,
+.teachingmodecover [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #F87DA9;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.teachingmodecover [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.teachingmodecover [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.student-infohead .teachingmodeinner {
+  margin-top: 15px;
+}
+
+.student-infohead .wrapper.Specificgender {
+  margin: 15px 0px;
+}
+
+.student-infohead .categoriescenter {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #33a1a0;
+}
+
+@media only screen and (max-width: 375px) {
+  .chooseforlogin .custumradiobtn label:before {
+    width: 20px;
+    height: 20px;
+  }
+  .chooseforlogin .custumradiobtn label:after {
+    width: 8px;
+    height: 8px;
+    background-color: #fc5185;
+    top: 1px;
+    left: 6px;
+    opacity: 0;
+  }
+  .chooseforlogin .loginchoosecover .leftpartloginimg {
+    width: 70px !important;
+  }
+  .loginsocialmediaicon ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loginsocialmediaicon ul li {
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+  .maincentalblock .teacherqualification .qualificationtext p {
+    font-size: 11px !important;
+  }
+  .maincentalblock .teacherqualification .qualificationtext .checkboxOverride {
+    width: 50% !important;
+  }
+  .maincentalblock .teacherqualification .qualificationtext .timinghead .checkboxOverride {
+    width: 100% !important;
+  }
+  .maincentalblock .teacherqualification .qualificationtext .availability ul li a {
+    width: 33px;
+    height: 33px;
+    font-size: 12px;
+  }
+  .maincentalblock .rating_star span {
+    font-size: 13px;
+  }
+  .maincentalblock .rating_star h6 {
+    font-size: 12px;
+  }
+  .maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext h3 {
+    font-size: 15px;
+    color: #7b7b7b;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+  }
+  .maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext h5 {
+    margin-bottom: 2px;
+  }
+  .maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profiletext .socialmediaicon ul li a {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .maincentalblock .teacher-profilecover .teacher-profileinner .teacher-profileimg img {
+    width: 85px;
+    height: 85px;
+  }
+  .maincentalblock .teacher_listimg img {
+    width: 70px !important;
+    height: 75px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext p {
+    margin-bottom: 2px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext h4 {
+    font-size: 13px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext {
+    padding-left: 20px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .titletime h3 {
+    font-size: 10px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .rating_star h6 {
+    font-size: 12px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .teacher_listtext .rating_star span {
+    font-size: 11px !important;
+  }
+  .maincentalblock .teacher_listcover .qualificationtext .teacher_listinner .viewprofileviewcover .viewprofileview {
+    padding: 2px 8px;
+    font-size: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
